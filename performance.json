@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "snapshotAt": "2026-11-07T09:12:38Z",
+  "firstDate": "2026-11-03",
+  "generatedAt": "2026-11-07T22:30:02+00:00",
+  "mode": "audited-automatic",
+  "verifiedThroughAt": "2026-11-07T09:12:38Z",
+  "hasUnverifiedLatest": false,
+  "periodSummary": {
+    "1": {
+      "usd": 0.82,
+      "pct": 0.18765,
+      "from": "2026-11-06T21:16:20+00:00",
+      "to": "2026-11-07T09:12:38+00:00",
+      "estimate": true,
+      "method": "modified-dietz",
+      "hours": 11.94
+    },
+    "7": null,
+    "30": null,
+    "all": {
+      "usd": -2.07,
+      "pct": -0.54331,
+      "from": "2026-11-04T20:44:26+00:00",
+      "to": "2026-11-07T09:12:38+00:00",
+      "estimate": true,
+      "method": "modified-dietz",
+      "hours": 60.47
+    }
+  },
+  "warning": null,
+  "closeComparison": {
+    "mode": "building-close-history",
+    "anchorAt": "2026-11-06T21:16:20Z",
+    "series": [
+      {
+        "date": "2026-11-06",
+        "at": "2026-11-06T21:16:20Z",
+        "portfolio": 0.0,
+        "cash": 0.0,
+        "sp500": 0.0,
+        "minutesAfterClose": 16.3,
+        "marketCloseDate": "2026-11-06"
+      }
+    ],
+    "schedule": "16:30 America/New_York",
+    "note": "Daily price comparisons use audited wallet observations near the same-session 4 PM New York close; values are approximations, not an exact 4 PM on-chain portfolio valuation."
+  },
+  "baselineDate": "2026-11-04",
+  "portfolioStartDate": "2026-11-04",
+  "audit": {
+    "status": "active",
+    "pendingCount": 0,
+    "verifiedFrom": "2026-11-04T20:44:26Z",
+    "recognisedTransfers": 1,
+    "netExternalCapitalUsd": 23.83,
+    "coverageAdjustmentUsd": 0.0,
+    "coverageAdjustmentCount": 1
+  },
+  "benchmarks": {
+    "cash": {
+      "label": "3M US Treasury (modeled)",
+      "source": "FRED DGS3MO",
+      "annualYieldPct": 4.17,
+      "observationDate": "2026-11-05"
+    },
+    "sp500": {
+      "label": "S&P 500 price index",
+      "source": "Yahoo Finance ^GSPC (daily close)",
+      "observationDate": "2026-11-06",
+      "dividendsIncluded": false
+    }
+  },
+  "series": [
+    {
+      "date": "2026-11-04",
+      "at": "2026-11-04T20:44:26Z",
+      "portfolio": 0.0,
+      "cash": 0.0,
+      "sp500": 0.0
+    },
+    {
+      "date": "2026-11-05",
+      "at": "2026-11-05T17:56:01Z",
+      "portfolio": -1.393648,
+      "cash": 0.0113,
+      "sp500": -4.35566
+    },
+    {
+      "date": "2026-11-06",
+      "at": "2026-11-06T23:32:32Z",
+      "portfolio": -0.668231,
+      "cash": 0.02249,
+      "sp500": -4.05483
+    },
+    {
+      "date": "2026-11-07",
+      "at": "2026-11-07T09:12:38Z",
+      "portfolio": -0.543315,
+      "cash": 0.03369,
+      "sp500": -4.05483
+    }
+  ]
+}

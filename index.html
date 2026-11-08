@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#081525">
+  <meta name="description" content="Your read-only wallet and DeFi portfolio tracker">
+  <title>Portfolio Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="top-left"><div class="brand"><span class="brand-icon" aria-hidden="true"><span></span><span></span><span></span></span><span>PORTFOLIO <b>TRACKER</b></span></div><div class="days-tile" title="Completed 24-hour periods since the configured start"><span class="days-number" id="days-live">—</span><span class="days-caption">DAYS LIVE</span></div></div>
+      <div class="top-right"><span class="sync-indicator" id="sync-label">No snapshot yet</span><div class="currency-switch" role="group" aria-label="Display currency"><button type="button" data-currency="USD" class="active" aria-pressed="true">$ USD</button><button type="button" data-currency="GBP" aria-pressed="false">£ GBP</button></div><button class="button subtle" id="refresh-btn" type="button" title="Request a new portfolio snapshot when available">↻ Refresh portfolio</button></div>
+    </header>
+    <main>
+      <section id="empty-state" class="empty hidden" aria-live="polite">
+        <span class="empty-icon">◉</span><h2>Ready for your first snapshot</h2>
+        <p>No portfolio data has been generated yet. Enter your public wallet address and Alchemy key locally with <code>setup.bat</code>, then run <code>start.bat</code>. Or preview the dashboard with clearly labelled example numbers.</p>
+        <button id="demo-btn" class="button primary" type="button">Preview example dashboard</button>
+      </section>
+      <div id="dashboard" class="hidden">
+        <section class="overview">
+          <div class="hero panel">
+            <div class="row-label"><span>TRACKED PORTFOLIO VALUE</span><span class="hero-dot" id="hero-currency">● USD</span></div>
+            <p class="hero-value" id="portfolio-total">$—</p>
+            <div class="hero-return"><span class="hero-return-label">NET INVESTMENT P&amp;L</span><span id="day-change" class="change" aria-live="polite">Awaiting verified deposits and withdrawals</span></div>
+            <div class="hero-accounting" aria-label="Portfolio accounting status">
+              <span id="hero-valued-at">Latest snapshot: waiting</span>
+              <span id="hero-capital">External capital added: awaiting audit</span>
+              <span id="hero-coverage">Nami: awaiting verification</span>
+              <span id="hero-audit">Accounting verification pending</span>
+            </div>
+            <div class="toggle hero-toggle" role="group" aria-label="Investment performance period"><button type="button" data-period="1">1D</button><button type="button" data-period="7">7D</button><button type="button" data-period="30">30D</button><button type="button" data-period="all" class="active">ALL</button></div>
+          </div>
+          <div class="metric-grid">
+            <div class="panel metric">
+              <div class="metric-label">Wallet tokens <span class="metric-icon">◈</span></div>
+              <div class="metric-number" id="tokens-total">$—</div>
+              <div class="metric-help" id="tokens-count">0 assets</div>
+              <div class="metric-share"><span>Portfolio allocation</span><strong id="tokens-share">—</strong></div>
+              <div class="metric-share-track" id="tokens-share-track" role="progressbar" aria-label="Wallet tokens share of portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="metric-share-fill wallet" id="tokens-share-bar"></div></div>
+            </div>
+            <div class="panel metric">
+              <div class="metric-label">LP positions <span class="metric-icon">▤</span></div>
+              <div class="metric-number" id="lp-total">$—</div>
+              <div class="metric-help" id="lp-count">0 positions</div>
+              <div class="metric-share"><span>Portfolio allocation</span><strong id="lp-share">—</strong></div>
+              <div class="metric-share-track" id="lp-share-track" role="progressbar" aria-label="Liquidity positions share of portfolio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="metric-share-fill liquidity" id="lp-share-bar"></div></div>
+            </div>
+          </div>
+        </section>
+        <section class="lp-summary-section"><div class="section-head"><div><h2>Liquidity positions</h2><p>Wallet-owned liquidity positions · token amounts and USD value</p></div></div><div class="lp-cards" id="lp-cards"></div></section>
+        <section class="panel chart-panel history-section"><div class="section-head"><div><h2>Investment performance</h2><p id="history-description">Cumulative return (%) · your portfolio vs benchmarks</p></div></div><div id="performance-legend" class="performance-legend" aria-label="Performance chart legend"></div><p id="comparison-status" class="comparison-status" aria-live="polite"></p><div id="chart-area" class="chart-area" role="img" aria-label="Percentage investment performance over time"></div><div class="chart-footer"><span id="history-span">No history</span><span id="snapshot-cadence">Daily comparison · USD basis</span></div><p id="performance-warning" class="performance-warning" aria-live="polite"></p></section>
+        <section class="panel assets-panel"><div class="section-head assets-head"><div><h2>Wallet tokens</h2><p id="assets-subtitle">Base wallet balances · listed once</p></div><div class="tools"><input id="search-input" aria-label="Search wallet tokens" placeholder="Search wallet tokens…" type="search"></div></div><div class="table-scroll"><table><thead><tr><th>ASSET</th><th>BALANCE</th><th class="right">USD VALUE</th></tr></thead><tbody id="assets-body"></tbody></table></div><div id="assets-empty" class="table-empty hidden">No wallet tokens match this search.</div></section>
+        <footer><span>Read-only analytics · No wallet connection, signing or transactions</span><span>Alchemy · Nami on-chain · DefiLlama · Frankfurter FX</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

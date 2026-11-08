@@ -1,0 +1,582 @@
+{
+  "schema": 2,
+  "startedAt": "2026-11-03T00:00:00Z",
+  "last": {
+    "at": "2026-11-07T09:12:38Z",
+    "date": "2026-11-07",
+    "totalUsd": 435.405952,
+    "tvlUsd": null,
+    "counts": {
+      "tokens": 5,
+      "lps": 3,
+      "manual": 0,
+      "unpriced": 36
+    },
+    "pricedIds": [
+      "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+      "base:0x4200000000000000000000000000000000000006",
+      "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "base:0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+      "base:native"
+    ],
+    "warnings": [
+      "Solidly LP USDC / USDT: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
+      "Solidly LP cbETH / WETH: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
+      "36 ERC-20 token balance(s) lack prices or metadata and are excluded. Check these before trusting the total.",
+      "Uniswap V3 values include liquidity and recorded owed tokens, but exclude fees accrued since the last position update. Staked/transferred NFTs are not found.",
+      "Daily value changes include deposits, withdrawals and transfers; they are not investment returns."
+    ],
+    "missing": [
+      "base: unpriced PANDA (0x0e8d5a27…)",
+      "base: unpriced ESSE (0x158609cc…)",
+      "base: unpriced MIRROR (0x1e25c1c6…)",
+      "base: unpriced OWO (0x1e27a621…)",
+      "base: unpriced USOT (0x1f88ce99…)",
+      "base: unpriced MINIMAL (0x29b88b38…)",
+      "base: unpriced ZERO (0x2a2851f1…)",
+      "base: unpriced NOMA (0x2fd8e050…)",
+      "base: unpriced AXIS (0x3de908ee…)",
+      "base: unpriced AI (0x486f6620…)",
+      "base: unpriced DUST (0x492ecc15…)",
+      "base: unpriced PEPE (0x4a5d095b…)",
+      "base: unpriced MAGA (0x51b92122…)",
+      "base: unpriced OVER (0x5753bf08…)",
+      "base: unpriced AVN (0x57c3e3c2…)",
+      "base: unpriced SXC (0x6ab0beb7…)",
+      "base: unpriced POOLZ (0x6c8f1657…)",
+      "base: unpriced GG (0x6dc685a3…)",
+      "base: unpriced GENESIS (0x78cdbef6…)",
+      "base: unpriced GTA6 (0x795e806c…)",
+      "base: unpriced EVMZONE (0x8352aec2…)",
+      "base: unpriced AXIS (0x8b8db831…)",
+      "base: unpriced VLX (0x9cfa80a4…)",
+      "base: unpriced BROKER (0xa0a0c3b4…)",
+      "base: unpriced SLOP (0xa5a3a7a1…)",
+      "base: unpriced CLAUDE (0xa8def24b…)",
+      "base: unpriced AI (0xb2000000…)",
+      "base: unpriced BRICSOIL (0xb2000000…)",
+      "base: unpriced DEEPSEEK (0xb2000000…)",
+      "base: unpriced LITHO (0xb756c679…)",
+      "base: unpriced ELON2028 (0xc26587c0…)",
+      "base: unpriced DACITY (0xd5fac3ea…)",
+      "base: unpriced AXIS (0xd6ec40c1…)",
+      "base: unpriced VAR (0xed517277…)",
+      "base: unpriced SQK (0xf118d956…)",
+      "base: unpriced MER (0xf9c77044…)"
+    ],
+    "rows": [
+      {
+        "id": "base:solidly:0x9ab7730b09ebd9ff2df70f06339bd289a1680a46",
+        "chain": "base",
+        "type": "lp",
+        "protocol": "Solidly V3",
+        "name": "USDC / USDT",
+        "symbol": "LP",
+        "usd": 316.962022,
+        "underlying": [
+          {
+            "symbol": "USDC",
+            "amount": "243.0120383724518241422118333",
+            "usd": 242.955836
+          },
+          {
+            "symbol": "USDT",
+            "amount": "74.06487543772032002033584428",
+            "usd": 74.006186
+          }
+        ],
+        "pending": false,
+        "rangesChecked": 3,
+        "activeRanges": 1,
+        "source": "on-chain best effort",
+        "url": "https://basescan.org/address/0x9ab7730b09ebd9ff2df70f06339bd289a1680a46"
+      },
+      {
+        "id": "base:solidly:0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b",
+        "chain": "base",
+        "type": "lp",
+        "protocol": "Solidly V3",
+        "name": "cbETH / WETH",
+        "symbol": "LP",
+        "usd": 92.063559,
+        "underlying": [
+          {
+            "symbol": "cbETH",
+            "amount": "0",
+            "usd": 0.0
+          },
+          {
+            "symbol": "WETH",
+            "amount": "0.04098341752186657848943301452",
+            "usd": 92.063559
+          }
+        ],
+        "pending": false,
+        "rangesChecked": 9,
+        "activeRanges": 1,
+        "source": "on-chain best effort",
+        "url": "https://basescan.org/address/0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b"
+      },
+      {
+        "id": "base:cl-nft:0xd0f883ea4e7596705522d3ab5589d0c582de99be:307",
+        "chain": "base",
+        "type": "lp",
+        "protocol": "Nami",
+        "name": "WETH / cbBTC",
+        "symbol": "LP",
+        "usd": 7.783088,
+        "underlying": [
+          {
+            "symbol": "WETH",
+            "amount": "0.001646036459826964075397478124",
+            "usd": 3.697592
+          },
+          {
+            "symbol": "cbBTC",
+            "amount": "0.00005373591751933490388078387361",
+            "usd": 4.085496
+          }
+        ],
+        "source": "verified Nami Algebra NFT",
+        "url": "https://basescan.org/nft/0xd0f883ea4e7596705522d3ab5589d0c582de99be/307",
+        "nftId": "307"
+      },
+      {
+        "id": "base:0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
+        "chain": "base",
+        "type": "token",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "amount": "7.27908",
+        "price": 0.999208,
+        "usd": 7.273312,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
+      },
+      {
+        "id": "base:native",
+        "chain": "base",
+        "type": "token",
+        "symbol": "ETH",
+        "name": "ETH (native)",
+        "amount": "0.001837786250517032",
+        "price": 2245.489625,
+        "usd": 4.12673,
+        "url": null
+      },
+      {
+        "id": "base:0x4200000000000000000000000000000000000006",
+        "chain": "base",
+        "type": "token",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "amount": "0.001518401078104311",
+        "price": 2246.361198,
+        "usd": 3.410877,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
+      },
+      {
+        "id": "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "chain": "base",
+        "type": "token",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "amount": "3.374942",
+        "price": 0.999769,
+        "usd": 3.374161,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+      },
+      {
+        "id": "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+        "chain": "base",
+        "type": "token",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "amount": "0.00016064031108694",
+        "price": 2566.0,
+        "usd": 0.412203,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
+      }
+    ],
+    "blockNumber": 54261917
+  },
+  "history": [
+    {
+      "date": "2026-11-03",
+      "totalUsd": 385.452737,
+      "tvlUsd": null
+    },
+    {
+      "date": "2026-11-04",
+      "totalUsd": 413.653693,
+      "tvlUsd": null
+    },
+    {
+      "date": "2026-11-05",
+      "totalUsd": 427.069355,
+      "tvlUsd": null
+    },
+    {
+      "date": "2026-11-06",
+      "totalUsd": 434.859089,
+      "tvlUsd": null
+    },
+    {
+      "date": "2026-11-07",
+      "totalUsd": 435.405952,
+      "tvlUsd": null
+    }
+  ],
+  "capitalAudit": {
+    "schema": 1,
+    "status": "active",
+    "baselineAt": "2026-11-04T20:44:26Z",
+    "baselineUsd": 413.653693,
+    "scannedThroughBlock": 54261917,
+    "flows": [
+      {
+        "date": "2026-11-05",
+        "at": "2026-11-05T23:29:09Z",
+        "usd": 23.82688,
+        "kind": "deposit",
+        "ref": "f680ec31f0a30e8be9a7"
+      }
+    ],
+    "pending": [],
+    "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
+    "lastScanAt": "2026-11-07T09:12:38Z",
+    "coverageAdjustments": [
+      {
+        "at": "2026-11-06T21:16:20Z",
+        "usd": 0.0,
+        "id": "base:cl-nft:0xd0f883ea4e7596705522d3ab5589d0c582de99be:307",
+        "sourceAt": "2026-11-05T23:34:31Z",
+        "reason": "Nami minted after complete pre-mint observation; gap-only, no value adjustment",
+        "correction": "v19.8-post-mint-no-double-deduction"
+      }
+    ]
+  },
+  "observations": [
+    {
+      "at": "2026-11-04T20:44:26Z",
+      "totalUsd": 413.653693,
+      "blockNumber": 53517859
+    },
+    {
+      "at": "2026-11-05T07:45:45Z",
+      "totalUsd": 413.722169,
+      "blockNumber": 53537699
+    },
+    {
+      "at": "2026-11-05T17:56:01Z",
+      "totalUsd": 407.888815,
+      "blockNumber": 53556007
+    },
+    {
+      "at": "2026-11-05T23:36:55Z",
+      "totalUsd": 427.069355,
+      "blockNumber": 53657203,
+      "complete": false,
+      "coverageGap": "Nami NFT not yet counted"
+    },
+    {
+      "at": "2026-11-06T21:16:20Z",
+      "totalUsd": 434.590442,
+      "blockNumber": 54047023,
+      "complete": true
+    },
+    {
+      "at": "2026-11-06T22:52:01Z",
+      "totalUsd": 435.612576,
+      "blockNumber": 54075726,
+      "complete": true
+    },
+    {
+      "at": "2026-11-06T23:32:32Z",
+      "totalUsd": 434.859089,
+      "blockNumber": 54087884,
+      "complete": true
+    },
+    {
+      "at": "2026-11-07T00:18:07Z",
+      "totalUsd": 435.05197,
+      "blockNumber": 54101557,
+      "complete": true
+    },
+    {
+      "at": "2026-11-07T09:12:38Z",
+      "totalUsd": 435.405952,
+      "blockNumber": 54261917,
+      "complete": true
+    }
+  ],
+  "solidlyDiscovery": {
+    "fingerprint": "442a4ed86450789240f89606",
+    "scannedToBlock": 54261858,
+    "partial": true,
+    "ranges": {
+      "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
+        [
+          1292,
+          1352
+        ],
+        [
+          1312,
+          1317
+        ],
+        [
+          1332,
+          1333
+        ],
+        [
+          1333,
+          1334
+        ],
+        [
+          1334,
+          1335
+        ],
+        [
+          1335,
+          1336
+        ],
+        [
+          1337,
+          1338
+        ],
+        [
+          1338,
+          1339
+        ],
+        [
+          1339,
+          1340
+        ]
+      ],
+      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          18
+        ]
+      ]
+    }
+  },
+  "tokenMetadata": {
+    "base:0x0e8d5a27ee2887bd53f5237c6902f80fd38481a2": {
+      "decimals": 9,
+      "symbol": "PANDA",
+      "name": "Panda Ai"
+    },
+    "base:0x158609cc4e5e1eb12d8d03329860e597d8048358": {
+      "decimals": 18,
+      "symbol": "ESSE",
+      "name": "ESSE by Virtuals"
+    },
+    "base:0x1e25c1c67a1de4fc8a602a638355659e36378aaf": {
+      "decimals": 18,
+      "symbol": "MIRROR",
+      "name": "Mirror"
+    },
+    "base:0x1e27a621981744a081682eb9c82c73ba3818c0a9": {
+      "decimals": 9,
+      "symbol": "OWO",
+      "name": "OWOWO"
+    },
+    "base:0x1f88ce99cbfade1e95653794738a19cb1365e15d": {
+      "decimals": 18,
+      "symbol": "USOT",
+      "name": "US OIL TRUST"
+    },
+    "base:0x29b88b3888696d626b9c6b38b356ec87d1eef2bc": {
+      "decimals": 9,
+      "symbol": "MINIMAL",
+      "name": "Minimalism"
+    },
+    "base:0x2a2851f10ffbda1e8d6ceca643a5018d531e7f96": {
+      "decimals": 9,
+      "symbol": "ZERO",
+      "name": "Zero Cool"
+    },
+    "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22": {
+      "decimals": 18,
+      "symbol": "cbETH",
+      "name": "Coinbase Wrapped Staked ETH"
+    },
+    "base:0x2fd8e05074a38452711db3c48410a62f02837497": {
+      "decimals": 9,
+      "symbol": "NOMA",
+      "name": "Noma"
+    },
+    "base:0x3de908ee35d26c455df3560aee26a967e8d6d716": {
+      "decimals": 9,
+      "symbol": "AXIS",
+      "name": "Axis Labs"
+    },
+    "base:0x4200000000000000000000000000000000000006": {
+      "decimals": 18,
+      "symbol": "WETH",
+      "name": "Wrapped Ether"
+    },
+    "base:0x486f662020286e17e7469df4e5f2cf2415f36662": {
+      "decimals": 18,
+      "symbol": "AI",
+      "name": "Open AI"
+    },
+    "base:0x492ecc15f93ac3cfb0c9dd2a1708a91f10e76110": {
+      "decimals": 9,
+      "symbol": "DUST",
+      "name": "DUST"
+    },
+    "base:0x4a5d095b3ddbf2776e9bb42c90e51ed96005ef9f": {
+      "decimals": 18,
+      "symbol": "PEPE",
+      "name": "Pepe Army"
+    },
+    "base:0x51b92122fe58883601fba4e99fc6f7f98ce0d1e0": {
+      "decimals": 18,
+      "symbol": "MAGA",
+      "name": "Maga Trump"
+    },
+    "base:0x5753bf08e198314c108bf21822a67ba9b5222a24": {
+      "decimals": 9,
+      "symbol": "OVER",
+      "name": "over.computer"
+    },
+    "base:0x57c3e3c2d7b40b60abbe6f4fbaa19b37dbf3ac98": {
+      "decimals": 9,
+      "symbol": "AVN",
+      "name": "Avareun AI"
+    },
+    "base:0x6ab0beb71a0c420035e861ee6834db4ccd2ff71f": {
+      "decimals": 18,
+      "symbol": "SXC",
+      "name": "SpaceX Cat's"
+    },
+    "base:0x6c8f16578f48438f7632da08a89832e67b8da0cf": {
+      "decimals": 9,
+      "symbol": "POOLZ",
+      "name": "Poolz Pad"
+    },
+    "base:0x6dc685a36b557bbc2d9dc396266f9ab9952c748f": {
+      "decimals": 9,
+      "symbol": "GG",
+      "name": "Gacha Galaxy"
+    },
+    "base:0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd": {
+      "decimals": 18,
+      "symbol": "SOLID",
+      "name": "Solidly"
+    },
+    "base:0x78cdbef65ede022351f2dd635abc41ac74788cbd": {
+      "decimals": 18,
+      "symbol": "GENESIS",
+      "name": "Genesis Launch"
+    },
+    "base:0x795e806cae7244c7b1e4e0f80d12ee1c0fac8054": {
+      "decimals": 9,
+      "symbol": "GTA6",
+      "name": "GTA VI"
+    },
+    "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
+      "decimals": 6,
+      "symbol": "USDC",
+      "name": "USD Coin"
+    },
+    "base:0x8352aec2e90bb4508696bf649af87a3bde323247": {
+      "decimals": 9,
+      "symbol": "EVMZONE",
+      "name": "evmzone"
+    },
+    "base:0x8b8db8317bc4e1ab4a8e087b0f4a3dfca7abbeb1": {
+      "decimals": 9,
+      "symbol": "AXIS",
+      "name": "Axis Robotics"
+    },
+    "base:0x9cfa80a45e6763eb8d10485a5a1117024f84339f": {
+      "decimals": 9,
+      "symbol": "VLX",
+      "name": "ValueX Chain"
+    },
+    "base:0xa0a0c3b481be4611dc44a8acbc11e6b7a4568379": {
+      "decimals": 18,
+      "symbol": "BROKER",
+      "name": "Broker Dog"
+    },
+    "base:0xa5a3a7a1dec1a57e41a0cdd8c2129cfd7b46b592": {
+      "decimals": 9,
+      "symbol": "SLOP",
+      "name": "Slop Cash"
+    },
+    "base:0xa8def24b9e5cf402e14d6f94e2e460499377d3aa": {
+      "decimals": 18,
+      "symbol": "CLAUDE",
+      "name": "Claude AI"
+    },
+    "base:0xb20000000000000000000000581e045b7c9b4000": {
+      "decimals": 18,
+      "symbol": "AI",
+      "name": "Meta AI"
+    },
+    "base:0xb20000000000000000000014d2b42049a5d15d71": {
+      "decimals": 18,
+      "symbol": "BRICSOIL",
+      "name": "BRICS Oil"
+    },
+    "base:0xb200000000000000000000cffdd03e4403efbb91": {
+      "decimals": 18,
+      "symbol": "DEEPSEEK",
+      "name": "DeepSeek AI"
+    },
+    "base:0xb756c679db8c1dd70060cde2e9ac63856e035d63": {
+      "decimals": 9,
+      "symbol": "LITHO",
+      "name": "Lithosphere"
+    },
+    "base:0xc26587c033b7e5a0c7b4fa4170ab6fb5638bb6dd": {
+      "decimals": 9,
+      "symbol": "ELON2028",
+      "name": "Elon 2028"
+    },
+    "base:0xd5fac3ea6c5d1133be9325a3d463c987851cf7e2": {
+      "decimals": 9,
+      "symbol": "DACITY",
+      "name": "Dacity Coin"
+    },
+    "base:0xd6ec40c1a1f2ad20415fe0046f80818ddf675e95": {
+      "decimals": 9,
+      "symbol": "AXIS",
+      "name": "Axis Token"
+    },
+    "base:0xed517277ffcabaf75d7db6278a07cd75fd159db5": {
+      "decimals": 9,
+      "symbol": "VAR",
+      "name": "Variational"
+    },
+    "base:0xf118d956bad49cceb12ad1213696c629dd8ae542": {
+      "decimals": 9,
+      "symbol": "SQK",
+      "name": "SQUEEK"
+    },
+    "base:0xf9c770441d994a1718d59d6d62ff965f345fa1b2": {
+      "decimals": 9,
+      "symbol": "MER",
+      "name": "Merchs.fun"
+    },
+    "base:0xfde4c96c8593536e31f229ea8f37b2ada2699bb2": {
+      "decimals": 6,
+      "symbol": "USDT",
+      "name": "Tether USD"
+    }
+  }
+}

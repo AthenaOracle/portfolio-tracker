@@ -1,0 +1,270 @@
+:root{--bg:#071321;--panel:#0d1e32;--panel2:#102740;--line:#294260;--ink:#f3f8ff;--muted:#9eb8d1;--lime:#82ccff;--blue:#82ccff;--orange:#ffcf9c;--radius:18px;color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse 60% 36% at 13% -15%,#273e33 0%,transparent 80%),var(--bg);color:var(--ink);font-size:14px;line-height:1.5}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--lime);outline-offset:3px}a{color:inherit}.shell{max-width:1330px;padding:0 35px;margin:auto}.hidden{display:none!important}.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2c3741;gap:16px}.brand{font-size:12px;letter-spacing:.19em;font-weight:800;display:flex;align-items:center;gap:14px}.brand b{color:#a7bac4}.brand-icon{width:34px;height:34px;background:#2b483b;border:1px solid #3e6850;border-radius:11px;display:flex;align-items:flex-end;gap:3px;padding:8px}.brand-icon span{width:5px;background:var(--lime);border-radius:2px}.brand-icon span:nth-child(1){height:8px}.brand-icon span:nth-child(2){height:15px}.brand-icon span:nth-child(3){height:11px}.top-right{display:flex;align-items:center;gap:18px}.sync-indicator{color:#a5b3b8;font-size:12px}.sync-indicator:before{content:"";display:inline-block;width:7px;height:7px;background:var(--lime);border-radius:50%;margin-right:9px}.button{border:1px solid var(--line);padding:9px 15px;border-radius:10px;background:transparent;color:var(--ink);font-weight:600}.button:hover{background:#25313e}.button.primary{background:var(--lime);border-color:var(--lime);color:#172519}.button.primary:hover{background:#c7f09c}.introduction{display:flex;align-items:center;justify-content:space-between;padding:39px 0 32px;gap:20px}.eyebrow{font-size:11px;letter-spacing:.21em;font-weight:750;color:var(--lime);margin:0 0 9px}.introduction h1{font-size:34px;letter-spacing:-.045em;font-weight:680;line-height:1.2;margin:0 0 9px}.muted{color:var(--muted);margin:0}.tag{border:1px solid #3c5e49;border-radius:999px;padding:8px 13px;color:var(--lime);white-space:nowrap;font-size:10px;letter-spacing:.1em;font-weight:800}.panel{background:var(--panel);border:1px solid #27323e;border-radius:var(--radius);box-shadow:0 8px 28px #0000000c}.overview{display:grid;grid-template-columns:1.04fr 1fr;gap:18px}.hero{padding:30px;min-height:248px;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(ellipse 85% 120% at 110% -30%,#325343 0%,transparent 85%),#1a2926;border-color:#345247}.row-label{display:flex;align-items:center;justify-content:space-between;color:#b1c6bb;font-weight:750;font-size:11px;letter-spacing:.11em}.hero-dot{font-size:10px;color:var(--lime);letter-spacing:.1em}.hero-value{font-size:clamp(40px,4.8vw,65px);line-height:1;letter-spacing:-.06em;font-weight:730;margin:18px 0 22px;overflow-wrap:anywhere}.hero-footer{display:flex;align-items:center;flex-wrap:wrap;gap:14px;justify-content:space-between}.change{font-weight:650;color:#cbd6d0}.change.positive{color:var(--lime)}.change.negative{color:#ffa5a0}.hero-note{font-size:12px;color:#b6c7bf}.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.metric{padding:22px 23px;min-width:0}.metric-label{font-size:12px;color:#9baebc;font-weight:650;display:flex;justify-content:space-between}.metric-icon{color:#798f9b;font-size:18px}.metric-number{font-size:clamp(23px,2.5vw,31px);font-weight:660;letter-spacing:-.043em;margin:15px 0 5px;overflow-wrap:anywhere}.metric-help{font-size:11px;color:#8fa0ae}.middle-grid{display:grid;grid-template-columns:1.65fr 1fr;gap:18px;margin-top:19px}.chart-panel,.allocation-panel{padding:25px 26px;min-width:0;min-height:346px}.section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.section-head h2,.alert-panel h2{font-size:16px;font-weight:690;letter-spacing:-.015em;margin:0 0 4px}.section-head p{font-size:12px;color:var(--muted);margin:0}.toggle{display:flex;gap:3px;background:#0f1720;border:1px solid #2a3743;padding:3px;border-radius:9px}.toggle button{font-size:11px;color:#91a2ad;font-weight:800;background:transparent;border:0;border-radius:6px;padding:6px 9px}.toggle button.active{background:#2e4339;color:var(--lime)}.chart-area{height:233px;margin-top:21px}.chart-area svg{width:100%;height:100%;overflow:visible}.chart-footer{display:flex;justify-content:space-between;color:#8fa0ae;font-size:11px}.allocation{padding-top:23px}.allocation-item{margin-bottom:22px}.allocation-line{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;margin-bottom:9px}.allocation-line strong{font-weight:640}.allocation-line small{color:var(--muted);font-size:11px}.network-name{display:flex;align-items:center;gap:9px;font-weight:650}.network-dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none}.bar-track{height:7px;background:#2a3542;border-radius:20px;overflow:hidden}.bar-fill{height:100%;border-radius:20px;min-width:0}.allocation-empty{color:var(--muted);font-size:12px}.alert-panel{margin-top:18px;padding:18px 24px;border:1px solid #61503b;border-radius:14px;background:#27231f}.alert-panel h2{color:#f1d4ab;font-size:14px}.alert-panel ul{color:#c9beae;padding-left:18px;margin:8px 0 0;font-size:12px}.alert-panel li{margin:5px 0}.assets-panel{margin:19px 0 0;padding:25px 0 9px}.assets-head{padding:0 26px 20px}.tools{display:flex;gap:10px}.tools input,.tools select{height:37px;color:var(--ink);background:#0f1720;border:1px solid #34404c;border-radius:9px;padding:0 12px;font-size:12px;outline:none}.tools input{width:210px}.tools select{max-width:150px}.filter-tabs{display:flex;gap:26px;border-bottom:1px solid var(--line);padding:0 26px}.filter-tabs button{border:0;border-bottom:2px solid transparent;background:none;color:#91a1ac;padding:0 0 12px;white-space:nowrap;font-size:12px;font-weight:680}.filter-tabs button.active{color:var(--lime);border-color:var(--lime)}.table-scroll{overflow:auto}table{border-collapse:collapse;width:100%;min-width:620px}th{color:#798d9c;font-size:10px;font-weight:740;letter-spacing:.09em;text-align:left;padding:17px 26px 12px}th.right{text-align:right}td{border-top:1px solid #27323d;padding:17px 26px;vertical-align:middle}tbody tr:hover{background:#1b2732}.asset-cell{display:flex;align-items:center;gap:14px;min-width:230px}.asset-icon{height:35px;width:35px;display:flex;align-items:center;justify-content:center;flex:none;border:1px solid #405568;background:#293e4d;border-radius:10px;color:#d2e2ee;font-size:12px;font-weight:740}.asset-icon.lp{background:#2d4136;border-color:#456149;color:var(--lime)}.asset-icon.manual{background:#453c31;border-color:#6a5541;color:var(--orange)}.asset-name{font-size:13px;font-weight:690}.asset-detail{font-size:11px;color:#8b9daa;margin-top:3px;max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.asset-name a{text-decoration:none}.asset-name a:hover{color:var(--lime);text-decoration:underline}.network-pill{font-size:11px;color:#b2c2cd;text-transform:capitalize}.category-pill{display:inline-block;color:#bac8d3;background:#273744;border:1px solid #3b5161;font-size:10px;font-weight:660;padding:5px 9px;border-radius:30px;white-space:nowrap}.category-pill.ok{color:#b6e48b;background:#273e33;border-color:#3a614b}.category-pill.out{color:#efc48b;background:#43392f;border-color:#64513a}.value-cell{text-align:right;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}.table-empty{text-align:center;padding:40px;color:var(--muted)}.empty{border:1px dashed #53715d;background:#19241e;border-radius:19px;padding:54px 24px;text-align:center;max-width:690px;margin:18px auto 65px}.empty-icon{font-size:36px;color:var(--lime)}.empty h2{font-size:24px;letter-spacing:-.03em;margin:13px 0}.empty p{color:#a5b7af;max-width:500px;margin:0 auto 24px}.empty code{color:var(--lime);font-size:13px}footer{display:flex;justify-content:space-between;gap:14px;padding:25px 0 33px;color:#718592;font-size:11px}@media(max-width:920px){.overview,.middle-grid{grid-template-columns:1fr}.hero{min-height:225px}.metric-grid{grid-template-columns:repeat(4,1fr)}.metric{padding:19px}.metric-number{font-size:22px}.shell{padding:0 20px}}@media(max-width:650px){.topbar{height:70px}.brand{letter-spacing:.08em;font-size:11px}.brand-icon{width:28px;height:28px;padding:6px}.sync-indicator{display:none}.introduction{padding:32px 0 24px}.introduction h1{font-size:30px}.tag{font-size:9px}.hero{padding:23px}.metric-grid{grid-template-columns:1fr 1fr;gap:10px}.metric{padding:17px}.metric-number{font-size:23px}.middle-grid{gap:12px}.chart-panel,.allocation-panel{padding:20px}.assets-panel{padding-top:20px}.assets-head{padding:0 17px 16px;flex-direction:column}.tools{width:100%}.tools input{flex:1;min-width:0}.tools select{width:135px}.filter-tabs{padding:0 17px;gap:16px;overflow-x:auto}.filter-tabs button{font-size:11px}.table-scroll{margin:0 -1px}th,td{padding:14px 17px}footer{flex-direction:column}.hero-value{font-size:44px}}
+/* On narrow screens, holdings become compact cards; no sideways scrolling needed to see USD value. */
+@media(max-width:650px){
+  table{min-width:0;width:100%}
+  thead{display:none}
+  tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 9px;padding:16px;border-top:1px solid var(--line)}
+  tbody td{border:0;padding:0;min-width:0}
+  tbody td:first-child{grid-column:1;grid-row:1}
+  tbody td:nth-child(2){grid-column:1;grid-row:2;padding-left:49px}
+  tbody td:nth-child(3){grid-column:2;grid-row:2;text-align:right}
+  tbody td:nth-child(4){grid-column:2;grid-row:1;align-self:center}
+  .asset-cell{min-width:0}
+  .asset-cell>div:last-child{min-width:0}
+  .asset-name,.asset-detail{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .asset-detail{max-width:calc(100vw - 210px)}
+  .value-cell{font-size:13px}
+  .category-pill{font-size:9px;padding:3px 8px}
+}
+
+/* V3 — premium midnight / glacier blue. All values retain strong white contrast. */
+body {background:radial-gradient(ellipse 65% 40% at 20% -12%,#1c4873 0%,transparent 77%),radial-gradient(ellipse 42% 35% at 95% 12%,#0a2844 0%,transparent 90%),var(--bg);color:var(--ink)}
+.topbar {height:96px;border-color:#25415e}
+.top-left,.top-right {display:flex;align-items:center;gap:22px}
+.top-right {gap:12px}
+.brand {letter-spacing:.14em;color:#fff}
+.brand b{color:#c1e9ff}
+.brand-icon {background:linear-gradient(135deg,#1576ba,#54c3ff);border:1px solid #66c6ff;box-shadow:0 0 22px #40adff25}
+.brand-icon span {background:#f0faff}
+.days-tile {display:flex;align-items:center;gap:10px;border-left:1px solid #31526e;padding-left:19px;white-space:nowrap}
+.days-number{font-size:29px;line-height:1;font-weight:760;letter-spacing:-.05em;color:#d6f2ff;font-variant-numeric:tabular-nums}
+.days-caption{font-size:10px;letter-spacing:.13em;color:#86aaca;font-weight:800}
+.currency-switch{display:flex;align-items:center;border:1px solid #335473;border-radius:12px;background:#0b2136;padding:4px;gap:3px;flex-shrink:0}
+.currency-switch button{padding:7px 12px;border:0;border-radius:8px;background:transparent;color:#a4bdd2;font-size:12px;font-weight:750;white-space:nowrap}
+.currency-switch button.active{background:#74c6fa;color:#062139;box-shadow:0 2px 12px #6ecaff3f}
+.currency-switch button:not(.active):hover{color:#fff;background:#24445f}
+.sync-indicator{color:#92aec7;font-size:11px}
+.sync-indicator:before{background:#74ceff}
+.button{background:#132b42;border-color:#2c4a65;color:#e7f5ff}
+.button:hover{background:#1c3a57}
+.button.primary{background:#74c6fa;color:#052039;border-color:#74c6fa}
+.button.primary:hover{background:#9bd9ff}
+.introduction{padding-top:35px;padding-bottom:28px}
+.eyebrow{color:#80d1ff;font-weight:780}
+.introduction h1{font-weight:770;font-size:39px;color:#fff}
+.tag{border-color:#3b729b;color:#94d6ff;background:#12304b}
+.panel{background:linear-gradient(147deg,#10273f,#0d1d30);border-color:#294360;box-shadow:0 16px 50px #02091426}
+.hero{background:radial-gradient(ellipse 92% 150% at 105% -34%,#256a9a 0%,transparent 75%),linear-gradient(130deg,#14375a,#0c243c);border-color:#336990;position:relative}
+.hero-value{color:#f6fbff;letter-spacing:-.06em}
+.row-label{color:#b9d6ec}
+.hero-dot{color:#91d8ff}
+.hero-note{color:#a6cce4}
+.change{color:#cbe7f7}
+.change.positive{color:#9ceacc}
+.change.negative{color:#ffc2c2}
+.fx-label{border-top:1px solid #2e5274;margin-top:8px;padding-top:10px;color:#afd6f2;font-size:10.5px;letter-spacing:.01em}
+.metric-label{color:#aec5d9}
+.metric-icon{color:#76b5df}
+.metric-number{color:#fff}
+.metric-help{color:#8dadc6}
+.section-head h2{color:#f5fbff}
+.section-head p{color:#93b0c8}
+.middle-grid{margin-top:18px}
+.toggle{background:#07192a;border-color:#2a4a66}
+.toggle button{color:#a0b9ce}
+.toggle button.active{background:#205077;color:#c8f0ff}
+.chart-footer{color:#91b1ca}
+.allocation-line small{color:#a3bdd1}
+.bar-track{background:#243c55}
+.assets-panel{margin-top:20px}
+.filter-tabs{border-color:#2d4761}
+.filter-tabs button{color:#a1b7ca}
+.filter-tabs button.active{color:#9cdeff;border-color:#8ed4ff}
+.tools input,.tools select{background:#0a2036;border-color:#355779;color:#fff}
+.asset-icon {color:#d9f1ff;background:#1e4668;border-color:#316f9e}
+.asset-icon.lp{background:#153f67;color:#a4e0ff;border-color:#407ca2}
+.asset-icon.manual{background:#53452f;color:#ffdab1;border-color:#876a4b}
+.asset-detail{color:#97b2ca}
+.asset-name a:hover{color:#9cdeff}
+.network-pill{color:#b7d3e8}
+.category-pill{background:#193953;color:#cbe2f5;border-color:#315675}
+.category-pill.ok{color:#95dfff;background:#144469;border-color:#377ca7}
+.category-pill.out{color:#ffe3a9;background:#3a3022;border-color:#6e5538}
+.alert-panel{background:#1e2b39;border-color:#476987}
+.alert-panel h2{color:#d0ebff}
+.alert-panel ul{color:#b5cbe0}
+.assets-panel td{border-color:#263f59}
+.assets-panel tbody tr:hover{background:#16324d}
+.empty{border-color:#447da3;background:#0d263e}
+.empty-icon,.empty code{color:#8bd6ff}
+.empty p{color:#b3c9dd}
+footer{color:#7898b3}
+.lp-summary-section{margin-top:20px}
+.lp-summary-section>.section-head{margin-bottom:15px}
+.info-flag{font-size:11px;border:1px solid #356384;background:#0e304b;color:#b4ddfa;border-radius:999px;padding:6px 10px;white-space:nowrap}
+.lp-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.lp-balance-card{border:1px solid #2c5373;border-radius:18px;background:radial-gradient(ellipse at 95% 1%,#1e4664 0%,transparent 70%),linear-gradient(130deg,#0d243c,#102b47);padding:21px 24px;box-shadow:0 15px 38px #040c1a20}
+.lp-card-head{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.lp-pair-title{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:730;color:#f6fbff}
+.lp-mark{height:31px;width:31px;border-radius:10px;display:grid;place-items:center;background:#225b83;color:#bfeaff;font-size:20px}
+.lp-card-value{font-size:24px;letter-spacing:-.04em;font-weight:780;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lp-component-list{padding:16px 0 7px}
+.lp-component{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:7px 0;color:#c4d9ea;font-size:13px}
+.lp-token{font-weight:690;color:#91cefa}
+.lp-amount{font-variant-numeric:tabular-nums;font-weight:660;color:#f0faff}
+.lp-card-footer{margin-top:9px;padding-top:12px;border-top:1px solid #294f6c;display:flex;align-items:center;justify-content:space-between;gap:12px;color:#83a9c8;font-size:10.5px}
+.lp-card-footer a{color:#9fddff;text-decoration:none;font-weight:700}
+.lp-card-footer a:hover{text-decoration:underline}
+@media(max-width:950px){.topbar{gap:13px}.top-left{gap:12px}.brand{letter-spacing:.08em}.top-right{gap:7px}.sync-indicator{display:none}.lp-cards{gap:12px}}
+@media(max-width:650px){.topbar{height:auto;min-height:82px;flex-wrap:wrap;padding:13px 0;row-gap:13px}.top-left{width:100%;justify-content:space-between}.top-right{width:100%;justify-content:space-between}.days-tile{padding-left:11px}.days-number{font-size:24px}.currency-switch{flex:1;justify-content:center}.currency-switch button{flex:1}.top-right>.button{flex:none}.introduction h1{font-size:33px}.lp-cards{grid-template-columns:1fr}.info-flag{display:none}.lp-card-value{font-size:23px}.hero{padding:24px}.hero-value{font-size:43px}.metric-grid{gap:11px}.metric{padding:18px 15px}}
+
+/* A simple wallet + LP scorecard instead of unrelated market TVL tiles. */
+.metric-grid{grid-template-columns:1fr;grid-template-rows:1fr 1fr}
+.metric{display:flex;flex-direction:column;justify-content:center}
+@media(max-width:920px){.metric-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}}
+@media(max-width:650px){.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* V4: remove introductory billboard, bring balances into immediate view. */
+main{padding-top:25px}
+.overview{margin-top:0}
+.lp-summary-section{margin-top:22px}
+@media(max-width:650px){main{padding-top:16px}}
+
+/* V6: quick composition first, then underlying LP holdings, then history. */
+.portfolio-split-section{margin-top:20px;padding:23px 26px;min-height:0}
+.portfolio-split-section .allocation{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px;padding-top:20px}
+.portfolio-split-section .allocation-item{margin-bottom:0}
+.history-section{margin-top:20px;min-height:0}
+@media(max-width:650px){.portfolio-split-section{padding:21px 19px}.portfolio-split-section .allocation{grid-template-columns:1fr;gap:14px}.history-section{padding:20px}}
+
+/* V7: show allocation inside the two existing balance cards. */
+.metric { padding: 17px 22px; }
+.metric-number { margin: 7px 0 0; }
+.metric-share { display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px;font-size:10.5px;color:#8eacc4; }
+.metric-share strong { color:#d3ecff;font-size:12px;font-weight:780;font-variant-numeric:tabular-nums; }
+.metric-share-track { margin-top:7px; height:6px;overflow:hidden;border-radius:999px;background:#263e56; }
+.metric-share-fill { width:0;height:100%;border-radius:999px;transition:width 350ms ease-out; }
+.metric-share-fill.wallet { background:linear-gradient(90deg,#4399ff,#86d5ff); }
+.metric-share-fill.liquidity { background:linear-gradient(90deg,#3ab4dc,#8df0d6); }
+@media (max-width:650px) { .metric {padding:15px 13px} .metric-share{align-items:flex-start;gap:5px;flex-wrap:wrap} .metric-share-track{margin-top:6px} }
+
+/* V10: flow-aware percentage performance benchmark chart. */
+.performance-legend{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:19px;margin-bottom:12px}
+.performance-legend-item{display:inline-flex;gap:7px;align-items:center;white-space:nowrap;padding:9px 11px;background:#0b2238;border:1px solid #2e4b67;border-radius:11px;color:#bed7e9;font-size:12px}
+.performance-legend-dot{height:9px;width:9px;border-radius:50%;flex:none}
+.performance-legend-value{color:#fff;font-size:13px;font-variant-numeric:tabular-nums}
+.performance-warning{margin-top:12px;line-height:1.6;color:#8faec8;font-size:11px}
+.performance-empty{padding:25px 10px;color:#a6c5dd;font-size:13px}
+.chart-area svg{height:auto;max-height:300px;width:100%;overflow:visible}
+@media(max-width:650px){.performance-legend{gap:7px}.performance-legend-item{flex:1 1 130px;justify-content:space-between;font-size:10px;padding:8px}.performance-legend-value{font-size:11px}}
+
+/* V11: one verified net-P&L line, no duplicated value-change or currency footnotes. */
+.hero-return{display:flex;flex-wrap:wrap;gap:7px 15px;align-items:baseline;margin:-3px 0 10px}
+.hero-return-label{font-size:10px;letter-spacing:.11em;font-weight:750;color:#a7cce5}
+.hero-return .change{font-size:19px;font-weight:730;color:#eaf5ff;overflow-wrap:anywhere}
+.hero-return .change.positive{color:#8ce5c1}
+.hero-return .change.negative{color:#ffa5a0}
+.hero-toggle{align-self:flex-start;margin:0 0 5px}
+.hero-value{margin-bottom:17px}
+@media(max-width:650px){.hero-return .change{font-size:16px}.hero-toggle button{padding:6px 8px}}
+
+
+/* V12: minimal performance chart */
+/* Keep the heading, chart axes, three colored series, and the main P&L period selector. */
+.history-section #history-description,
+.history-section #performance-warning,
+.history-section .chart-footer,
+.history-section .section-head > .toggle,
+.history-section .performance-legend-value {
+    display: none !important;
+}
+.history-section .performance-legend {
+    gap: 12px 23px;
+    margin: 16px 0 1px;
+}
+.history-section .performance-legend-item {
+    gap: 8px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+}
+.history-section .performance-legend-label {
+    color: #bcd6eb;
+    font-weight: 650;
+}
+.history-section .performance-legend-dot { width: 9px; height: 9px; }
+.history-section .chart-area { margin-top: 15px; }
+.history-section { padding-bottom: 19px; }
+@media(max-width:650px) {
+    .history-section .performance-legend { gap: 10px 16px; }
+    .history-section .performance-legend-item {
+        flex: initial;
+        font-size: 11px;
+        justify-content: flex-start;
+    }
+}
+
+/* V13: chart scales to its containing card, on desktop and mobile. */
+.history-section { min-width:0; }
+.history-section .chart-area {
+    width:100%; min-width:0; height:265px; margin:12px 0 2px;
+    overflow:hidden; position:relative;
+}
+.history-section .chart-area svg {
+    display:block; width:100%; height:100%; max-height:none;
+    overflow:hidden;
+}
+.history-section .performance-legend-item.series-unavailable { opacity:.58; }
+@media (max-width:650px) {
+    .history-section .chart-area { height:222px; }
+}
+
+/* V18: small honest timing label, no extra panels. */
+.history-section .comparison-status{font-size:11px;color:#93b6ce;margin:5px 0 0;line-height:1.4}
+.history-section .comparison-status:empty{display:none}
+
+/* V19: additional provider-discovery cards; original dashboard palette retained. */
+.provider-section{margin-top:24px}
+.provider-section>.section-head{display:flex;gap:15px;justify-content:space-between;align-items:end;margin-bottom:8px}
+.provider-eyebrow{font-size:9px;font-weight:750;letter-spacing:.12em;color:#84d2ff;border:1px solid #3976a1;border-radius:999px;padding:5px 8px;margin-left:10px;vertical-align:middle}
+.provider-value-box{text-align:right;display:flex;flex-direction:column;gap:2px;white-space:nowrap;color:#8fb6d4;font-size:10px}
+.provider-value-box strong{font-size:20px;color:#fff;font-variant-numeric:tabular-nums}
+.provider-details{display:flex;flex-wrap:wrap;gap:6px 16px;color:#b4d6eb;font-size:11px;margin:8px 0}
+.provider-compare{font-size:11px;color:#82aaca;margin:5px 0 17px}
+.provider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.provider-card{min-width:0;border:1px solid #2b5270;border-radius:16px;padding:18px 20px;background:radial-gradient(ellipse at 95% 0%,#1a4264 0%,transparent 75%),linear-gradient(130deg,#102b45,#0b1e32)}
+.provider-card-top,.provider-card-heading,.provider-asset{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.provider-card-heading{justify-content:flex-start;min-width:0;color:#f4fbff;font-size:14px}
+.provider-card-heading strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.provider-avatar{width:32px;height:32px;flex:none;border:1px solid #427ba0;border-radius:10px;display:grid;place-items:center;color:#bce7ff;font-size:11px;background:#1d4c70;overflow:hidden}
+.provider-logo{width:100%;height:100%;object-fit:contain}
+.provider-price{font-size:18px;white-space:nowrap;color:#fff;font-variant-numeric:tabular-nums}
+.provider-asset{font-size:12px;margin-top:13px;color:#b5d1e6}
+.provider-tokens{min-width:0;overflow-wrap:anywhere}
+.provider-amount{font-variant-numeric:tabular-nums;white-space:nowrap;color:#f1fbff;font-weight:650}
+.provider-more{font-size:11px;color:#91b6d0;margin:10px 0 0}
+@media(max-width:650px){.provider-grid{grid-template-columns:1fr}.provider-card{padding:16px}.provider-section>.section-head{align-items:start}.provider-value-box strong{font-size:17px}}
+
+/* V19.5: consolidated holdings. */
+.supplementary-lp{border-style:dashed;border-color:#5683a3;}
+.supplementary-note{color:#b8d9ee;}
+.asset-balance{color:#d1e8f7;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.assets-panel table{min-width:420px;}
+.history-section .comparison-status{color:#b6d6ed;font-size:12px;line-height:1.5;}
+@media(max-width:650px){.assets-panel table{min-width:355px;}.asset-balance{white-space:normal;}}
+
+/* V19.6: accounting belongs in the EXISTING main value card, not new panels. */
+.hero-accounting{display:flex;flex-wrap:wrap;gap:7px 14px;margin:0 0 14px;padding:10px 0 11px;border-top:1px solid #31577a;color:#acd5ed;font-size:11px;line-height:1.5}
+.hero-accounting span{display:inline-flex;align-items:center;gap:5px}
+#hero-audit{color:#ffcf9e}
+#hero-coverage{color:#a7e5d4}
+@media(max-width:650px){.hero-accounting{flex-direction:column;gap:5px;margin-bottom:12px;font-size:10.5px}}
+
+/* V19.9: unobtrusive interactive return tooltip, all values on one shared scale. */
+.history-section .chart-area{position:relative}
+.history-section .chart-area svg{touch-action:pan-y}
+.history-section .chart-area svg:focus-visible{outline:2px solid #82cfff;outline-offset:-2px;border-radius:7px}
+.history-section .return-tooltip{
+  position:absolute;z-index:4;pointer-events:none;width:max-content;min-width:165px;max-width:min(215px,calc(100% - 12px));
+  padding:9px 10px;border:1px solid #456f90;border-radius:11px;
+  background:rgba(7,26,44,.97);box-shadow:0 12px 35px #0007;
+  color:#eff8ff;font-size:11px;line-height:1.5;
+}
+.history-section .return-tooltip[hidden]{display:none!important}
+.history-section .return-tooltip-date{font-weight:750;font-size:11px;color:#cfebff;padding:0 1px 5px}
+.history-section .return-tooltip-row{display:flex;align-items:center;justify-content:space-between;gap:12px;border-left:3px solid transparent;padding:3px 0 3px 7px;margin:2px 0}
+.history-section .return-tooltip-label{color:#bfd5e9;white-space:nowrap}
+.history-section .return-tooltip-value{font-weight:780;font-variant-numeric:tabular-nums;white-space:nowrap}

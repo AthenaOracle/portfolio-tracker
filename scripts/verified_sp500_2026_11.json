@@ -1,0 +1,11 @@
+{
+  "series": "SP500",
+  "sourceName": "Independently verified Nov 3-4, 2026 closes (Yahoo Finance; AP)",
+  "sourceUrl": "https://finance.yahoo.com/quote/%5EGSPC/history/",
+  "alsoVerifiedBy": "https://apnews.com/article/c0be7ca45b5875abe758e0570cb9a265",
+  "comment": "Historical closing prices, not intraday values; seed covers only these two dates and no later dates.",
+  "closes": {
+    "2026-11-03": 7568.92,
+    "2026-11-04": 7688.62
+  }
+}

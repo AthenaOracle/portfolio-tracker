@@ -1,0 +1,7 @@
+{
+  "completeFrom": "2026-11-04",
+  "flows": [
+    {"date": "2026-11-05", "usd": 100.0, "note": "Example deposit of new external funds"},
+    {"date": "2026-11-07", "usd": -25.0, "note": "Example withdrawal"}
+  ]
+}

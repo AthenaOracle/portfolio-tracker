@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "positions": [
+    {
+      "manager": "0xd0f883ea4e7596705522d3ab5589d0c582de99be",
+      "tokenId": "307",
+      "sourceTx": "0x711242d9823a12b68aa6dfe2e3a02892025b35be5cd4cbfe5e9d327a4c9804f2"
+    }
+  ]
+}

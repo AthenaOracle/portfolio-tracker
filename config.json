@@ -1,0 +1,81 @@
+{
+    "title":  "My portfolio",
+    "note":  "Wallet balances and DeFi positions, in one place.",
+    "chains":  [
+                   "base"
+               ],
+    "uniswapV3":  {
+                      "enabled":  true,
+                      "maxPositionsPerChain":  40
+                  },
+    "tvlProtocols":  [
+
+                     ],
+    "manual":  [
+
+               ],
+    "historyDays":  365,
+    "liveSince":  "",
+    "solidlyLps":  [
+                       {
+                           "name":  "USDC / USDT",
+                           "pool":  "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46",
+                           "chain":  "base",
+                           "tokens":  [
+                                          {
+                                              "symbol":  "USDC",
+                                              "contract":  "0x833589fCD6EDb6E08f4c7C32D4f71b54bdA02913",
+                                              "amount":  null
+                                          },
+                                          {
+                                              "symbol":  "USDT",
+                                              "contract":  "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+                                              "amount":  null
+                                          }
+                                      ],
+                           "auto":  true,
+                           "knownRanges":  [
+                                               [
+                                                   10,
+                                                   16
+                                               ]
+                                           ]
+                       },
+                       {
+                           "name":  "cbETH / WETH",
+                           "pool":  "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b",
+                           "chain":  "base",
+                           "tokens":  [
+                                          {
+                                              "symbol":  "cbETH",
+                                              "contract":  "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+                                              "amount":  null
+                                          },
+                                          {
+                                              "symbol":  "WETH",
+                                              "contract":  "0x4200000000000000000000000000000000000006",
+                                              "amount":  null
+                                          }
+                                      ],
+                           "auto":  true,
+                           "knownRanges":  [
+                                               [
+                                                   1332,
+                                                   1333
+                                               ],
+                                               [
+                                                   1334,
+                                                   1335
+                                               ]
+                                           ]
+                       }
+                   ],
+    "showTvl":  false,
+    "refreshEndpoint":  "",
+    "providerPreview":  {
+                            "expectedProtocols":  [
+                                                      "Solidly",
+                                                      "Nami"
+                                                  ]
+                        }
+}

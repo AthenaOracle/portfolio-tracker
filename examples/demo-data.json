@@ -1,0 +1,189 @@
+{
+  "schema": 2,
+  "last": {
+    "at": "2026-11-03T06:00:00Z",
+    "date": "2026-11-03",
+    "totalUsd": 6731.54,
+    "tvlUsd": 116200000000,
+    "counts": {
+      "tokens": 4,
+      "lps": 2,
+      "manual": 0,
+      "unpriced": 3
+    },
+    "warnings": [
+      "EXAMPLE DATA ONLY: fictional balances and manually entered LP quantities.",
+      "Solidly LP quantities in this example are NOT automatically read from the wallet.",
+      "Daily changes include deposits and withdrawals, not just investment returns."
+    ],
+    "rows": [
+      {
+        "id": "sample:1",
+        "type": "token",
+        "chain": "base",
+        "name": "Ether (native)",
+        "symbol": "ETH",
+        "amount": "0.63",
+        "price": 2610.24,
+        "usd": 1644.45
+      },
+      {
+        "id": "sample:2",
+        "type": "token",
+        "chain": "base",
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "amount": "750",
+        "price": 1,
+        "usd": 750
+      },
+      {
+        "id": "sample:3",
+        "type": "lp",
+        "chain": "base",
+        "name": "cbETH / WETH",
+        "symbol": "LP",
+        "protocol": "Solidly V3",
+        "usd": 2650.8,
+        "source": "manual quantities",
+        "underlying": [
+          {
+            "symbol": "cbETH",
+            "amount": "0.31",
+            "usd": 917
+          },
+          {
+            "symbol": "WETH",
+            "amount": "0.66",
+            "usd": 1733.8
+          }
+        ]
+      },
+      {
+        "id": "sample:4",
+        "type": "lp",
+        "chain": "base",
+        "name": "USDC / USDT",
+        "symbol": "LP",
+        "protocol": "Solidly V3",
+        "usd": 1490.0,
+        "source": "manual quantities",
+        "underlying": [
+          {
+            "symbol": "USDC",
+            "amount": "735",
+            "usd": 735
+          },
+          {
+            "symbol": "USDT",
+            "amount": "755",
+            "usd": 755
+          }
+        ]
+      },
+      {
+        "id": "sample:5",
+        "type": "token",
+        "chain": "base",
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "amount": "0.055",
+        "price": 2610.24,
+        "usd": 143.56
+      },
+      {
+        "id": "sample:6",
+        "type": "token",
+        "chain": "base",
+        "name": "USDT",
+        "symbol": "USDT",
+        "amount": "52.73",
+        "price": 1,
+        "usd": 52.73
+      }
+    ]
+  },
+  "history": [
+    {
+      "date": "2026-10-19",
+      "totalUsd": 5931.14,
+      "tvlUsd": 110100000000
+    },
+    {
+      "date": "2026-10-20",
+      "totalUsd": 6025.11,
+      "tvlUsd": 110800000000
+    },
+    {
+      "date": "2026-10-21",
+      "totalUsd": 6003.21,
+      "tvlUsd": 109800000000
+    },
+    {
+      "date": "2026-10-22",
+      "totalUsd": 6110.32,
+      "tvlUsd": 111500000000
+    },
+    {
+      "date": "2026-10-23",
+      "totalUsd": 6130.22,
+      "tvlUsd": 110900000000
+    },
+    {
+      "date": "2026-10-24",
+      "totalUsd": 6204.63,
+      "tvlUsd": 111800000000
+    },
+    {
+      "date": "2026-10-25",
+      "totalUsd": 6198.53,
+      "tvlUsd": 112200000000
+    },
+    {
+      "date": "2026-10-26",
+      "totalUsd": 6288.91,
+      "tvlUsd": 112100000000
+    },
+    {
+      "date": "2026-10-27",
+      "totalUsd": 6320.85,
+      "tvlUsd": 112800000000
+    },
+    {
+      "date": "2026-10-28",
+      "totalUsd": 6268.8,
+      "tvlUsd": 113000000000
+    },
+    {
+      "date": "2026-10-29",
+      "totalUsd": 6409.04,
+      "tvlUsd": 113800000000
+    },
+    {
+      "date": "2026-10-30",
+      "totalUsd": 6431.58,
+      "tvlUsd": 114400000000
+    },
+    {
+      "date": "2026-10-31",
+      "totalUsd": 6388.1,
+      "tvlUsd": 115500000000
+    },
+    {
+      "date": "2026-11-01",
+      "totalUsd": 6524.19,
+      "tvlUsd": 115700000000
+    },
+    {
+      "date": "2026-11-02",
+      "totalUsd": 6664.5,
+      "tvlUsd": 115900000000
+    },
+    {
+      "date": "2026-11-03",
+      "totalUsd": 6731.54,
+      "tvlUsd": 116200000000
+    }
+  ],
+  "startedAt": "2026-10-19T09:00:00Z"
+}
