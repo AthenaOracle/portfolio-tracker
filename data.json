@@ -2,9 +2,9 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-08T20:10:59Z",
+    "at": "2026-11-08T21:41:46Z",
     "date": "2026-11-08",
-    "totalUsd": 434.397622,
+    "totalUsd": 434.267046,
     "tvlUsd": null,
     "counts": {
       "tokens": 5,
@@ -73,17 +73,17 @@
         "protocol": "Solidly V3",
         "name": "USDC / USDT",
         "symbol": "LP",
-        "usd": 326.57116,
+        "usd": 326.585842,
         "underlying": [
           {
             "symbol": "USDC",
-            "amount": "210.6225892074890103950326631",
-            "usd": 210.562286
+            "amount": "219.0714301443461638951115693",
+            "usd": 219.024039
           },
           {
             "symbol": "USDT",
-            "amount": "116.1203096420164738636722083",
-            "usd": 116.008873
+            "amount": "107.6612796895061587068606424",
+            "usd": 107.561803
           }
         ],
         "pending": false,
@@ -99,17 +99,17 @@
         "protocol": "Solidly V3",
         "name": "cbETH / WETH",
         "symbol": "LP",
-        "usd": 91.730528,
+        "usd": 91.609979,
         "underlying": [
           {
             "symbol": "cbETH",
-            "amount": "0.02468387318532007034646025064",
-            "usd": 62.778988
+            "amount": "0.03605584840399093658877811732",
+            "usd": 91.609979
           },
           {
             "symbol": "WETH",
-            "amount": "0.01300275273597423170473414776",
-            "usd": 28.95154
+            "amount": "0",
+            "usd": 0.0
           }
         ],
         "pending": false,
@@ -125,17 +125,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 7.736339,
+        "usd": 7.722811,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.001834881187302198071465410713",
-            "usd": 4.085492
+            "amount": "0.001823249717746064288071807591",
+            "usd": 4.053515
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00004817389984417956002728169843",
-            "usd": 3.650848
+            "amount": "0.00004851566823543171399299069763",
+            "usd": 3.669295
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -149,8 +149,8 @@
         "symbol": "ETH",
         "name": "ETH (native)",
         "amount": "0.001831160013486445",
-        "price": 2225.344442,
-        "usd": 4.074962,
+        "price": 2221.835818,
+        "usd": 4.068537,
         "url": null
       },
       {
@@ -160,8 +160,8 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.001402518118099537",
-        "price": 2226.570071,
-        "usd": 3.122805,
+        "price": 2223.236459,
+        "usd": 3.118129,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
       },
@@ -172,8 +172,8 @@
         "symbol": "USDT",
         "name": "Tether USD",
         "amount": "0.543195",
-        "price": 0.99904,
-        "usd": 0.542674,
+        "price": 0.999076,
+        "usd": 0.542693,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
       },
@@ -184,8 +184,8 @@
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": "0.486675",
-        "price": 0.999714,
-        "usd": 0.486536,
+        "price": 0.999784,
+        "usd": 0.48657,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -196,13 +196,13 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.00005214350091648",
-        "price": 2543.32,
-        "usd": 0.132618,
+        "price": 2540.78,
+        "usd": 0.132485,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       }
     ],
-    "blockNumber": 54891420
+    "blockNumber": 54918655
   },
   "history": [
     {
@@ -232,7 +232,7 @@
     },
     {
       "date": "2026-11-08",
-      "totalUsd": 434.397622,
+      "totalUsd": 434.267046,
       "tvlUsd": null
     }
   ],
@@ -241,7 +241,7 @@
     "status": "active",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 54891420,
+    "scannedThroughBlock": 54918655,
     "flows": [
       {
         "date": "2026-11-05",
@@ -253,7 +253,7 @@
     ],
     "pending": [],
     "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
-    "lastScanAt": "2026-11-08T20:10:59Z",
+    "lastScanAt": "2026-11-08T21:41:46Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -329,11 +329,17 @@
       "totalUsd": 434.397622,
       "blockNumber": 54891420,
       "complete": true
+    },
+    {
+      "at": "2026-11-08T21:41:46Z",
+      "totalUsd": 434.267046,
+      "blockNumber": 54918655,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 54891403,
+    "scannedToBlock": 54918646,
     "partial": true,
     "ranges": {
       "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
