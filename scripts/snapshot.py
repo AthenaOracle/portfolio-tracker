@@ -759,7 +759,7 @@ def build_snapshot(config, address, key, existing=None):
         capital_sources = []
         source_text = os.environ.get('PORTFOLIO_CAPITAL_SOURCES_JSON','')
         if not source_text and (ROOT/'capital-sources.json').exists():
-            source_text = (ROOT/'capital-sources.json').read_text(encoding='utf8')
+            source_text = (ROOT/'capital-sources.json').read_text(encoding='utf-8-sig')
         if source_text:
             try:
                 source_data = json.loads(source_text)
@@ -841,10 +841,10 @@ def main():
     if not ADDRESS.fullmatch(address):
         raise SnapshotError('Missing or invalid WALLET_ADDRESS. Use public 0x address (never a seed phrase).')
     config_path = Path(args.config)
-    config = json.loads(config_path.read_text(encoding='utf8'))
+    config = json.loads(config_path.read_text(encoding='utf-8-sig'))
     validate_config(config)
     out_path = Path(args.output)
-    existing = json.loads(out_path.read_text(encoding='utf8')) if out_path.exists() else {}
+    existing = json.loads(out_path.read_text(encoding='utf-8-sig')) if out_path.exists() else {}
     if not args.force and not args.dry_run:
         previous = existing.get('last', {}).get('at') if isinstance(existing.get('last'), dict) else None
         if isinstance(previous, str):
