@@ -1,36 +1,36 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-09T19:47:44Z",
+  "snapshotAt": "2026-11-09T22:35:46Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-09T19:47:46+00:00",
+  "generatedAt": "2026-11-09T22:35:47+00:00",
   "mode": "audited-automatic",
-  "verifiedThroughAt": "2026-11-09T19:47:44Z",
+  "verifiedThroughAt": "2026-11-09T22:35:46Z",
   "hasUnverifiedLatest": false,
   "periodSummary": {
     "1": {
-      "usd": -4.49,
-      "pct": -1.034,
-      "from": "2026-11-08T20:06:01+00:00",
-      "to": "2026-11-09T19:47:44+00:00",
+      "usd": -0.81,
+      "pct": -0.18908,
+      "from": "2026-11-09T01:03:51+00:00",
+      "to": "2026-11-09T22:35:46+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 23.7
+      "hours": 21.53
     },
     "7": null,
     "30": null,
     "all": {
-      "usd": -11.27,
-      "pct": -2.6418,
+      "usd": -11.61,
+      "pct": -2.71913,
       "from": "2026-11-04T20:44:26+00:00",
-      "to": "2026-11-09T19:47:44+00:00",
+      "to": "2026-11-09T22:35:46+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 119.06
+      "hours": 121.86
     }
   },
   "warning": null,
   "closeComparison": {
-    "mode": "building-close-history",
+    "mode": "close-aligned",
     "anchorAt": "2026-11-06T21:16:20Z",
     "series": [
       {
@@ -41,6 +41,15 @@
         "sp500": 0.0,
         "minutesAfterClose": 16.3,
         "marketCloseDate": "2026-11-06"
+      },
+      {
+        "date": "2026-11-09",
+        "at": "2026-11-09T22:35:46Z",
+        "portfolio": -1.12667,
+        "cash": 0.03374,
+        "sp500": 2.34626,
+        "minutesAfterClose": 95.8,
+        "marketCloseDate": "2026-11-09"
       }
     ],
     "schedule": "16:30 America/New_York",
@@ -61,13 +70,13 @@
     "cash": {
       "label": "3M US Treasury (modeled)",
       "source": "FRED DGS3MO",
-      "annualYieldPct": 4.17,
-      "observationDate": "2026-11-05"
+      "annualYieldPct": 4.19,
+      "observationDate": "2026-11-06"
     },
     "sp500": {
       "label": "S&P 500 price index",
       "source": "Yahoo Finance ^GSPC (daily close)",
-      "observationDate": "2026-11-06",
+      "observationDate": "2026-11-09",
       "dividendsIncluded": false
     }
   },
@@ -97,22 +106,22 @@
       "date": "2026-11-07",
       "at": "2026-11-07T09:12:38Z",
       "portfolio": -1.42598,
-      "cash": 0.03369,
+      "cash": 0.03374,
       "sp500": -4.05483
     },
     {
       "date": "2026-11-08",
       "at": "2026-11-08T22:21:42Z",
       "portfolio": -2.699195,
-      "cash": 0.04489,
+      "cash": 0.04499,
       "sp500": -4.05483
     },
     {
       "date": "2026-11-09",
-      "at": "2026-11-09T19:47:44Z",
-      "portfolio": -2.6418,
-      "cash": 0.05609,
-      "sp500": -4.05483
+      "at": "2026-11-09T22:35:46Z",
+      "portfolio": -2.719132,
+      "cash": 0.05624,
+      "sp500": -1.80371
     }
   ]
 }
