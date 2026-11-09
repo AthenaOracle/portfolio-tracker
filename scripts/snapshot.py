@@ -774,7 +774,8 @@ def build_snapshot(config, address, key, existing=None):
                 existing.get('capitalAudit'), existing.get('last', {}), current,
                 [p for p in config.get('solidlyLps', []) if p.get('chain','base') == 'base'],
                 ROOT / 'capital-review-private.json',
-                trusted_sources=capital_sources)
+                trusted_sources=capital_sources,
+                extra_known={token: meta[0] for token, meta in nami.TOKENS.items()} if nami_refs else None)
         except Exception as exc:
             old_audit = existing.get('capitalAudit')
             if isinstance(old_audit, dict) and old_audit.get('baselineAt'):

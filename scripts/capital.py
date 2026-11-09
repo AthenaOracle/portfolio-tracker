@@ -120,7 +120,7 @@ def _raw_amount(row):
     raise AuditError('Transfer amount could not be measured')
 
 
-def _known_assets(rows, pools):
+def _known_assets(rows, pools, extra_known=None):
     result = {}
     for r in rows:
         if r.get('type') != 'token' or r.get('usd') is None: continue
@@ -130,6 +130,10 @@ def _known_assets(rows, pools):
     for p in pools:
         for t in p.get('tokens', []):
             if isinstance(t.get('contract'),str): result[t['contract'].lower()] = t.get('symbol','TOKEN')
+    # Only include separately verified LP tokens, not arbitrary airdrops.
+    for contract, symbol in (extra_known or {}).items():
+        if _address_ok(str(contract)) and isinstance(symbol, str) and symbol:
+            result[contract.lower()] = symbol
     return result
 
 
@@ -449,7 +453,7 @@ def analyze_transactions(rpc, owner, transfers, key, pools, known, prices, previ
     return recorded,pending,private
 
 
-def update_audit(rpc, owner, key, previous, previous_snapshot, current, pools, private_file=None, price_fn=historical_price, trusted_sources=None):
+def update_audit(rpc, owner, key, previous, previous_snapshot, current, pools, private_file=None, price_fn=historical_price, trusted_sources=None, extra_known=None):
     """Return audit; no blockchain calls are made when it is first initialized.
 
     If the user has not yet established coverage, start *at this snapshot*.
@@ -476,14 +480,17 @@ def update_audit(rpc, owner, key, previous, previous_snapshot, current, pools, p
     incoming = _collect(rpc,owner,old_head+1,head,'to')
     outgoing = _collect(rpc,owner,old_head+1,head,'from')
     rows = list(previous_snapshot.get('rows',[])) + list(current.get('rows',[]))
-    known = _known_assets(rows,pools)
+    known = _known_assets(rows,pools,extra_known)
     # Preserve prices in one update; transfer quotes do not contact Alchemy.
     new_flows, pending, private = analyze_transactions(
         rpc,owner,incoming+outgoing,key,pools,known,{},old_pending,
         price_fn=price_fn, trusted_sources=trusted_sources,
         price_rows=[(previous_snapshot.get('at'), previous_snapshot.get('rows', [])),
                     (current.get('at'), current.get('rows', []))])
-    record['flows'] = list(previous.get('flows',[]))+new_flows
+    # A replay may revisit previously credited transfers; never count twice.
+    earlier_flows = list(previous.get('flows', []))
+    credited = {f.get('ref') for f in earlier_flows if isinstance(f, dict)}
+    record['flows'] = earlier_flows + [f for f in new_flows if f.get('ref') not in credited]
     record['pending'] = pending
     record['scannedThroughBlock'] = head
     record['status'] = 'review-needed' if pending else 'active'

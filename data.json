@@ -257,10 +257,17 @@
         "usd": 23.82688,
         "kind": "deposit",
         "ref": "f680ec31f0a30e8be9a7"
+      },
+      {
+        "at": "2026-11-05T23:30:03Z",
+        "date": "2026-11-05",
+        "usd": 3.820683,
+        "kind": "deposit",
+        "ref": "ab4a2ecbb7e069215a35"
       }
     ],
     "pending": [],
-    "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
+    "message": "External capital ledger reconciled; missed cbBTC funding deposit recorded.",
     "lastScanAt": "2026-11-09T18:51:20Z",
     "coverageAdjustments": [
       {
