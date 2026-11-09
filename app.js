@@ -473,6 +473,7 @@ function renderChart() {
     return;
   }
 
+  
   // Size the SVG viewBox from the actual card dimensions, not a fixed 760px
   // canvas. The old fixed width plus height:auto caused axes and labels to
   // overlap the card footer at desktop sizes.
@@ -481,83 +482,198 @@ function renderChart() {
   const L = W < 450 ? 52 : 68, R = W < 450 ? 14 : 24, T = 18, B = 40;
   const inner = W-L-R, usable = H-T-B;
   const values=[0];
-  for (const point of data) for (const key of keys) if(Number.isFinite(point[key.key])) values.push(point[key.key]);
+
+  for (const point of data) {
+    for (const key of keys) {
+      if(Number.isFinite(point[key.key])) values.push(point[key.key]);
+    }
+  }
+
   const min=Math.min(...values), max=Math.max(...values);
   const padding=Math.max(0.035,(max-min)*0.18);
   const low=min-padding, high=max+padding;
+
   const x=i=>L+(data.length===1?inner/2:i/(data.length-1)*inner);
   const y=v=>T+(high-v)/(high-low)*usable;
+
   const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   svg.setAttribute('preserveAspectRatio','xMidYMid meet');
   svg.setAttribute('role','group');
   svg.setAttribute('tabindex','0');
   svg.setAttribute('aria-label',`Portfolio, Treasury and S&P 500 returns; ${data.length} daily observation${data.length===1?'':'s'}. Use left and right arrow keys to inspect returns, Enter to pin, and Escape to dismiss.`);
+
   const add=(tag,attrs,container=svg)=>{
     const node=document.createElementNS('http://www.w3.org/2000/svg',tag);
-    for(const [k,v] of Object.entries(attrs)) node.setAttribute(k,String(v));
-    container.append(node); return node;
+    for(const [k,v] of Object.entries(attrs)) {
+      node.setAttribute(k,String(v));
+    }
+    container.append(node);
+    return node;
   };
+
+  // Horizontal grid lines and percentage labels.
   for(let i=0;i<5;i++) {
     const val=low+(high-low)*i/4, yy=y(val);
-    add('line',{x1:L,y1:yy,x2:W-R,y2:yy,stroke:'#314867','stroke-width':1,'stroke-dasharray':'3 6'});
-    const label=add('text',{x:L-11,y:yy+4,fill:'#a2bad0','font-size':W<450?11:12,'text-anchor':'end'});
+    add('line',{
+      x1:L,y1:yy,x2:W-R,y2:yy,
+      stroke:'#314867',
+      'stroke-width':1,
+      'stroke-dasharray':'3 6'
+    });
+
+    const label=add('text',{
+      x:L-11,y:yy+4,
+      fill:'#a2bad0',
+      'font-size':W<450?11:12,
+      'text-anchor':'end'
+    });
+
     label.textContent=`${val>0?'+':''}${val.toFixed(Math.abs(val)<1?2:1)}%`;
   }
-  if(low<0&&high>0) add('line',{x1:L,y1:y(0),x2:W-R,y2:y(0),stroke:'#70869b','stroke-width':1.2});
 
+  // Zero-return reference line.
+  if(low<0&&high>0) {
+    add('line',{
+      x1:L,y1:y(0),x2:W-R,y2:y(0),
+      stroke:'#70869b',
+      'stroke-width':1.2
+    });
+  }
+
+  // Draw portfolio, Treasury and S&P 500 performance.
   keys.forEach((line,lineIndex)=>{
     let chunk=[];
+
     const flush=()=>{
-      if(chunk.length>1) add('polyline',{
-        points:chunk.map(([i,v])=>`${x(i)},${y(v)}`).join(' '),
-        fill:'none',stroke:line.color,'stroke-width':line.key==='portfolio'?3.1:2.6,
-        'stroke-linecap':'round','stroke-linejoin':'round'
-      });
+      if(chunk.length>1) {
+        add('polyline',{
+          points:chunk.map(([i,v])=>`${x(i)},${y(v)}`).join(' '),
+          fill:'none',
+          stroke:line.color,
+          'stroke-width':line.key==='portfolio'?3.1:2.6,
+          'stroke-linecap':'round',
+          'stroke-linejoin':'round'
+        });
+      }
       chunk=[];
     };
+
     data.forEach((point,i)=>{
-      if(Number.isFinite(point[line.key])) chunk.push([i,point[line.key]]);
-      else flush();
+      if(Number.isFinite(point[line.key])) {
+        chunk.push([i,point[line.key]]);
+      } else {
+        flush();
+      }
     });
+
     flush();
-    // Always show a distinctive colored end marker. One-day histories only
-    // contain a point, so separate the three overlapping zero markers by 9px.
+
+    // Always show a distinctive colored end marker.
+    // One-day histories only contain a point, so separate
+    // the three overlapping zero markers by 9px.
     let lastIndex=-1;
-    for(let i=data.length-1;i>=0;i--) if(Number.isFinite(data[i][line.key])) {lastIndex=i;break;}
-    if(lastIndex>=0){
+
+    for(let i=data.length-1;i>=0;i--) {
+      if(Number.isFinite(data[i][line.key])) {
+        lastIndex=i;
+        break;
+      }
+    }
+
+    if(lastIndex>=0) {
       const offset=data.length===1 ? (lineIndex-1)*9 : 0;
-      add('circle',{cx:x(lastIndex)+offset,cy:y(data[lastIndex][line.key]),r:data.length===1?4.8:4.1,
-        fill:line.color,stroke:'#0d2237','stroke-width':1.5});
+
+      add('circle',{
+        cx:x(lastIndex)+offset,
+        cy:y(data[lastIndex][line.key]),
+        r:data.length===1?4.8:4.1,
+        fill:line.color,
+        stroke:'#0d2237',
+        'stroke-width':1.5
+      });
     }
   });
-  const ticks=Math.min(W<450?3:5,data.length);
-  for(let j=0;j<ticks;j++){
-    const i=ticks===1?0:Math.round(j*(data.length-1)/(ticks-1));
-    const label=add('text',{x:x(i),y:H-10,fill:'#97b0c7','font-size':W<450?10:12,'text-anchor':'middle'});
-    const sameDate = data.length > 1 && data[0].date === data[data.length-1].date;
+
+  // V23: Responsive historical date labels.
+  //
+  // Display every recorded date when sufficient horizontal
+  // space is available.
+  //
+  // On smaller screens or with longer histories, automatically
+  // reduce the number of visible date labels.
+  //
+  // This only changes axis labels. All historical observations,
+  // plotted values and tooltip points remain available.
+
+  const ticks = Math.min(
+    data.length,
+    Math.max(2, Math.floor(inner / 90) + 1)
+  );
+
+  for(let j=0;j<ticks;j++) {
+    const i=ticks===1
+      ? 0
+      : Math.round(j*(data.length-1)/(ticks-1));
+
+    const label=add('text',{
+      x:x(i),
+      y:H-10,
+      fill:'#97b0c7',
+      'font-size':W<450?10:12,
+      'text-anchor':'middle'
+    });
+
+    const sameDate =
+      data.length>1 &&
+      data[0].date===data[data.length-1].date;
+
     label.textContent = sameDate && data[i].at
-      ? new Date(data[i].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'UTC'})
+      ? new Date(data[i].at).toLocaleTimeString(
+          'en-GB',{
+            hour:'2-digit',
+            minute:'2-digit',
+            timeZone:'UTC'
+          }
+        )
       : formatDate(data[i].date).replace(/ \d{4}$/,'');
   }
-  // V19.9: one lightweight, colour-matched tooltip. Values are taken from
-  // the already-rendered percent-return series; no additional API calls.
+
+  // V19.9: one lightweight, colour-matched tooltip.
+  // Values are taken from the already-rendered percent-return
+  // series; no additional API calls.
   const tooltip = create('div','return-tooltip');
   tooltip.hidden = true;
   tooltip.setAttribute('aria-hidden','true');
+
   const tooltipDate = create('div','return-tooltip-date');
   const tooltipRows = new Map();
+
   tooltip.append(tooltipDate);
+
   for (const line of keys) {
     const row = create('div','return-tooltip-row');
     row.style.borderLeftColor = line.color;
-    const label = create('span','return-tooltip-label',line.label);
-    const value = create('strong','return-tooltip-value','—');
+
+    const label = create(
+      'span',
+      'return-tooltip-label',
+      line.label
+    );
+
+    const value = create(
+      'strong',
+      'return-tooltip-value',
+      '—'
+    );
+
     value.style.color = line.color;
+
     row.append(label,value);
     tooltip.append(row);
     tooltipRows.set(line.key,value);
   }
+
   area.append(svg,tooltip);
   // A transparent hit surface makes hovering work between thin SVG lines.
   // It is last in the drawing order, before the non-interactive guide.
