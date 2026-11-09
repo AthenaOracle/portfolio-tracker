@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-09T01:03:51Z",
+  "snapshotAt": "2026-11-09T08:00:21Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-09T01:03:53+00:00",
+  "generatedAt": "2026-11-09T08:00:23+00:00",
   "mode": "audited-automatic",
-  "verifiedThroughAt": "2026-11-09T01:03:51Z",
+  "verifiedThroughAt": "2026-11-09T08:00:21Z",
   "hasUnverifiedLatest": false,
   "periodSummary": {
     "1": {
-      "usd": -4.02,
-      "pct": -0.92528,
+      "usd": -6.65,
+      "pct": -1.53092,
       "from": "2026-11-08T20:06:01+00:00",
-      "to": "2026-11-09T01:03:51+00:00",
+      "to": "2026-11-09T08:00:21+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 4.96
+      "hours": 11.91
     },
     "7": null,
     "30": null,
     "all": {
-      "usd": -6.97,
-      "pct": -1.66211,
+      "usd": -9.6,
+      "pct": -2.26324,
       "from": "2026-11-04T20:44:26+00:00",
-      "to": "2026-11-09T01:03:51+00:00",
+      "to": "2026-11-09T08:00:21+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 100.32
+      "hours": 107.27
     }
   },
   "warning": null,
@@ -109,8 +109,8 @@
     },
     {
       "date": "2026-11-09",
-      "at": "2026-11-09T01:03:51Z",
-      "portfolio": -1.662106,
+      "at": "2026-11-09T08:00:21Z",
+      "portfolio": -2.263239,
       "cash": 0.05609,
       "sp500": -4.05483
     }
