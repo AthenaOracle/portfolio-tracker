@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-11T22:12:13Z",
+  "snapshotAt": "2026-11-11T22:30:44Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-11T22:12:14+00:00",
-  "mode": "audited-automatic",
+  "generatedAt": "2026-11-11T22:30:45+00:00",
+  "mode": "partially-verified",
   "verifiedThroughAt": "2026-11-11T22:12:13Z",
-  "hasUnverifiedLatest": false,
+  "hasUnverifiedLatest": true,
   "periodSummary": {
     "1": {
       "usd": 2.25,
@@ -36,7 +36,7 @@
       "hours": 169.46
     }
   },
-  "warning": null,
+  "warning": "New capital transfers need review; prior verified returns remain visible.",
   "closeComparison": {
     "mode": "close-aligned",
     "anchorAt": "2026-11-06T21:16:20Z",
@@ -66,8 +66,8 @@
   "baselineDate": "2026-11-04",
   "portfolioStartDate": "2026-11-04",
   "audit": {
-    "status": "active",
-    "pendingCount": 0,
+    "status": "review-needed",
+    "pendingCount": 1,
     "verifiedFrom": "2026-11-04T20:44:26Z",
     "recognisedTransfers": 2,
     "netExternalCapitalUsd": 27.65,

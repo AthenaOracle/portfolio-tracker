@@ -2,15 +2,15 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-11T22:12:13Z",
+    "at": "2026-11-11T22:30:44Z",
     "date": "2026-11-11",
-    "totalUsd": 428.00973,
+    "totalUsd": 560.851864,
     "tvlUsd": null,
     "counts": {
       "tokens": 6,
       "lps": 3,
       "manual": 0,
-      "unpriced": 42
+      "unpriced": 43
     },
     "pricedIds": [
       "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
@@ -23,7 +23,7 @@
     "warnings": [
       "Solidly LP USDC / USDT: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
       "Solidly LP cbETH / WETH: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
-      "42 ERC-20 token balance(s) lack prices or metadata and are excluded. Check these before trusting the total.",
+      "43 ERC-20 token balance(s) lack prices or metadata and are excluded. Check these before trusting the total.",
       "Uniswap V3 values include liquidity and recorded owed tokens, but exclude fees accrued since the last position update. Staked/transferred NFTs are not found.",
       "Daily value changes include deposits, withdrawals and transfers; they are not investment returns."
     ],
@@ -69,6 +69,7 @@
       "base: unpriced www`discord`gg/DCPrime (0xec5622b5…)",
       "base: unpriced VAR (0xed517277…)",
       "base: unpriced SQK (0xf118d956…)",
+      "base: unpriced MORI (0xf92739a2…)",
       "base: unpriced MER (0xf9c77044…)"
     ],
     "rows": [
@@ -79,17 +80,17 @@
         "protocol": "Solidly V3",
         "name": "USDC / USDT",
         "symbol": "LP",
-        "usd": 322.860647,
+        "usd": 322.862887,
         "underlying": [
           {
             "symbol": "USDC",
-            "amount": "200.2105262541682041343155239",
-            "usd": 200.158294
+            "amount": "223.8321478237898097481219212",
+            "usd": 223.786057
           },
           {
             "symbol": "USDT",
-            "amount": "122.800146985351095479077465",
-            "usd": 122.702353
+            "amount": "99.15711504898117175244562109",
+            "usd": 99.07683
           }
         ],
         "pending": false,
@@ -99,23 +100,34 @@
         "url": "https://basescan.org/address/0x9ab7730b09ebd9ff2df70f06339bd289a1680a46"
       },
       {
+        "id": "base:native",
+        "chain": "base",
+        "type": "token",
+        "symbol": "ETH",
+        "name": "ETH (native)",
+        "amount": "0.066011715196063386",
+        "price": 2070.512553,
+        "usd": 136.678085,
+        "url": null
+      },
+      {
         "id": "base:solidly:0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b",
         "chain": "base",
         "type": "lp",
         "protocol": "Solidly V3",
         "name": "cbETH / WETH",
         "symbol": "LP",
-        "usd": 86.12038,
+        "usd": 85.97778,
         "underlying": [
           {
             "symbol": "cbETH",
-            "amount": "0.01776401507809401421522657208",
-            "usd": 42.40377
+            "amount": "0.01763996479971039707631953732",
+            "usd": 41.910577
           },
           {
             "symbol": "WETH",
-            "amount": "0.02111473051847653317406767615",
-            "usd": 43.71661
+            "amount": "0.0212566199646153760474849277",
+            "usd": 44.067203
           }
         ],
         "pending": false,
@@ -131,33 +143,22 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 7.23285,
+        "usd": 7.237732,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.002702078850894592553886449869",
-            "usd": 5.59447
+            "amount": "0.002597645513352828069519838926",
+            "usd": 5.385192
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00002202270241839699959865160931",
-            "usd": 1.63838
+            "amount": "0.00002493219756377925058769103015",
+            "usd": 1.85254
           }
         ],
         "source": "verified Nami Algebra NFT",
         "url": "https://basescan.org/nft/0xd0f883ea4e7596705522d3ab5589d0c582de99be/2781",
         "nftId": "2781"
-      },
-      {
-        "id": "base:native",
-        "chain": "base",
-        "type": "token",
-        "symbol": "ETH",
-        "name": "ETH (native)",
-        "amount": "0.001788877596063386",
-        "price": 2070.531408,
-        "usd": 3.703927,
-        "url": null
       },
       {
         "id": "base:0x4200000000000000000000000000000000000006",
@@ -166,8 +167,8 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.001348235868332634",
-        "price": 2070.43182,
-        "usd": 2.79143,
+        "price": 2073.104893,
+        "usd": 2.795034,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
       },
@@ -178,8 +179,8 @@
         "symbol": "USDT",
         "name": "Tether USD",
         "amount": "2.508598",
-        "price": 0.999204,
-        "usd": 2.5066,
+        "price": 0.99919,
+        "usd": 2.506567,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
       },
@@ -190,8 +191,8 @@
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": "2.501264",
-        "price": 0.999739,
-        "usd": 2.500611,
+        "price": 0.999794,
+        "usd": 2.500749,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -214,13 +215,13 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.000022882280869253",
-        "price": 2387.06,
-        "usd": 0.054621,
+        "price": 2375.887806,
+        "usd": 0.054366,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       }
     ],
-    "blockNumber": 56223788
+    "blockNumber": 56229342
   },
   "history": [
     {
@@ -265,7 +266,7 @@
     },
     {
       "date": "2026-11-11",
-      "totalUsd": 428.00973,
+      "totalUsd": 560.851864,
       "tvlUsd": null
     }
   ],
@@ -284,10 +285,10 @@
   },
   "capitalAudit": {
     "schema": 1,
-    "status": "active",
+    "status": "review-needed",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 56223788,
+    "scannedThroughBlock": 56229342,
     "flows": [
       {
         "date": "2026-11-05",
@@ -304,9 +305,19 @@
         "ref": "ab4a2ecbb7e069215a35"
       }
     ],
-    "pending": [],
-    "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
-    "lastScanAt": "2026-11-11T22:12:13Z",
+    "pending": [
+      {
+        "ref": "21569cb8047135433c7d",
+        "at": "2026-11-11T22:18:52Z",
+        "direction": "in",
+        "asset": "ETH",
+        "quantity": "0.0642228376",
+        "usd": null,
+        "reason": "Direct incoming transfer from an unverified funding address; may be capital or earnings"
+      }
+    ],
+    "message": "0 direct external transfer(s) identified, 1 transaction(s) need review.",
+    "lastScanAt": "2026-11-11T22:30:44Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -454,11 +465,17 @@
       "totalUsd": 428.00973,
       "blockNumber": 56223788,
       "complete": true
+    },
+    {
+      "at": "2026-11-11T22:30:44Z",
+      "totalUsd": 560.851864,
+      "blockNumber": 56229342,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 56223776,
+    "scannedToBlock": 56229331,
     "partial": true,
     "ranges": {
       "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
@@ -760,6 +777,11 @@
       "decimals": 9,
       "symbol": "SQK",
       "name": "SQUEEK"
+    },
+    "base:0xf92739a272fb1711968dfc87205933124a572e9d": {
+      "decimals": 9,
+      "symbol": "MORI",
+      "name": "Mori Finance"
     },
     "base:0xf9c770441d994a1718d59d6d62ff965f345fa1b2": {
       "decimals": 9,
