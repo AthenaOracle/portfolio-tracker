@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-11T01:20:05Z",
+  "snapshotAt": "2026-11-11T19:11:31Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-11T01:20:10+00:00",
+  "generatedAt": "2026-11-11T19:11:33+00:00",
   "mode": "audited-automatic",
-  "verifiedThroughAt": "2026-11-11T01:20:05Z",
+  "verifiedThroughAt": "2026-11-11T19:11:31Z",
   "hasUnverifiedLatest": false,
   "periodSummary": {
     "1": {
-      "usd": -3.24,
-      "pct": -0.75453,
-      "from": "2026-11-10T03:40:16+00:00",
-      "to": "2026-11-11T01:20:05+00:00",
+      "usd": 1.25,
+      "pct": 0.29417,
+      "from": "2026-11-11T01:20:05+00:00",
+      "to": "2026-11-11T19:11:31+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 21.66
+      "hours": 17.86
     },
     "7": null,
     "30": null,
     "all": {
-      "usd": -15.54,
-      "pct": -3.60982,
+      "usd": -14.29,
+      "pct": -3.32627,
       "from": "2026-11-04T20:44:26+00:00",
-      "to": "2026-11-11T01:20:05+00:00",
+      "to": "2026-11-11T19:11:31+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 148.59
+      "hours": 166.45
     }
   },
   "warning": null,
@@ -75,7 +75,7 @@
     },
     "sp500": {
       "label": "S&P 500 price index",
-      "source": "Yahoo Finance ^GSPC (daily close)",
+      "source": "FRED SP500",
       "observationDate": "2026-11-10",
       "dividendsIncluded": false
     }
@@ -128,14 +128,14 @@
       "at": "2026-11-10T12:40:55Z",
       "portfolio": -3.166715,
       "cash": 0.06763,
-      "sp500": -2.18101
+      "sp500": -2.18102
     },
     {
       "date": "2026-11-11",
-      "at": "2026-11-11T01:20:05Z",
-      "portfolio": -3.609822,
+      "at": "2026-11-11T19:11:31Z",
+      "portfolio": -3.326269,
       "cash": 0.07901,
-      "sp500": -2.18101
+      "sp500": -2.18102
     }
   ]
 }
