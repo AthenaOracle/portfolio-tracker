@@ -1,6 +1,16 @@
 name: Daily portfolio snapshot
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-snapshot.yml'
+      - 'scripts/nami_auto.py'
+      - 'scripts/snapshot.py'
+      - 'scripts/nami_preview.py'
+      - 'scripts/nami_integration.py'
+      - 'nami-positions.json'
+      - 'tests/test_nami_auto.py'
   # Daily at 4:30 PM New York time, 30 minutes after the regular
   # 4 PM Eastern stock-market close. GitHub schedules can start late.
   # Weekend/holiday wallet snapshots still occur, but the close-aligned
@@ -27,11 +37,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Test Nami rollover invariants
+        run: python -m unittest discover -s tests -p 'test_nami_auto.py'
+
       - name: Build the daily snapshot
         env:
           ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
@@ -50,7 +63,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data.json performance.json
+          git add data.json performance.json nami-positions.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update daily portfolio snapshot [skip ci]'
             git push

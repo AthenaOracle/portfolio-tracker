@@ -10,6 +10,10 @@ import math
 import os
 import re
 import sys
+
+# Share one SnapshotError class with Nami helpers.
+if __name__ == '__main__':
+    sys.modules['snapshot'] = sys.modules[__name__]
 import time
 from datetime import datetime, timezone, timedelta
 from decimal import Decimal, localcontext
@@ -597,7 +601,17 @@ def build_snapshot(config, address, key, existing=None):
     # with wallet/Solidly at the SAME snapshot time, never from stale preview JSON.
     import nami_preview as nami
     from nami_integration import verified_nami_rows, coverage_bridges, mark_coverage_gaps
-    nami_refs = nami.load_position_refs()
+    from nami_auto import discover_active
+    if 'base' in rpc_by_chain:
+        nami_refs, nami_burned_ids = discover_active(
+            rpc_by_chain['base'], address, key, nami.load_position_refs(),
+            (existing.get('last') or {}).get('rows') or [], nami)
+    elif nami.load_position_refs():
+        raise SnapshotError('Saved Nami NFTs require Base in the selected chains')
+    else:
+        nami_refs, nami_burned_ids = [], set()
+    if nami_refs:
+        print('Nami verified active NFT IDs: ' + ', '.join(r['tokenId'] for r in nami_refs), flush=True)
     if nami_refs and 'base' not in rpc_by_chain:
         raise SnapshotError('Saved Nami NFTs require Base in the selected chains')
     price_keys = [CHAINS[chain]['native_price'] for chain, _ in native]
@@ -705,9 +719,7 @@ def build_snapshot(config, address, key, existing=None):
     rows.extend(nami_rows)
     previously_nami = {r.get('id') for r in existing.get('last', {}).get('rows', [])
                        if isinstance(r, dict) and r.get('protocol') == 'Nami' and r.get('usd') is not None}
-    if previously_nami - {r['id'] for r in nami_rows}:
-        raise SnapshotError('Previously valued Nami NFT no longer verifies; preserving last snapshot')
-
+    # Nami NFT retirement is verified in discover_active() above.
     # The historic safeguard prevents price coverage losses from fabricating a drawdown.
     old_ids = set(existing.get('last', {}).get('pricedIds', []))
     current_ids = {r['id'] for r in rows if r['type'] == 'token' and r.get('usd') is not None}
@@ -749,6 +761,7 @@ def build_snapshot(config, address, key, existing=None):
     # but is no longer used to erase older audited performance observations.
     # This intentionally allows data.json to grow as more days are recorded.
     output = {'schema': 2, 'startedAt': started, 'last': current, 'history': history}
+    output['namiDiscovery'] = {'schema': 1, 'active': nami_refs, 'burnedIds': sorted(nami_burned_ids, key=int)}
     # V14: unified investment P&L audits only cash that actually enters or
     # leaves the wallet. Claims, LP changes, staking yield and token prices are
     # already included in the combined wallet+LP USD valuation.
@@ -866,6 +879,11 @@ def main():
         tmp = out_path.with_name(out_path.name + '.tmp')
         tmp.write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n', encoding='utf8')
         tmp.replace(out_path)  # Atomic replace only after all chains and pricing succeed.
+        # Only persist active NFT references after the complete audited snapshot
+        # succeeds; a failed run never replaces a trusted reference list.
+        from nami_preview import atomic_json, POSITIONS_PATH
+        atomic_json(POSITIONS_PATH, {
+            'schema': 1, 'positions': result['namiDiscovery']['active']})
     priced_rows = sum(row.get('usd') is not None for row in result['last']['rows'])
     print(f'Snapshot OK: ${result["last"]["totalUsd"]:,.2f} tracked; {priced_rows} priced rows; {result["last"]["counts"]["unpriced"]} unpriced token balances')
     if isinstance(result.get('capitalAudit'), dict):

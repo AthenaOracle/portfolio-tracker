@@ -284,33 +284,23 @@ def build_preview(found, at=None, price_fetcher=None):
 
 
 def scan_wallet_nfts(rpc, key, wallet, max_checked=18):
-    """One optional NFT-ownership REST request, bounded contract probing.
+    """Read-only current Nami holdings; contract-filtered and fully paginated.
 
-    Discovery is informative only: a matching Algebra NFT may belong to a
-    different DEX, so an explicit manager/token-id confirmation is required.
+    No generic-first-18 cap and no reliance on a stale local NFT reference.
     """
-    url='https://base-mainnet.g.alchemy.com/nft/v3/'+key+'/getNFTsForOwner?'+urlencode({
-        'owner':wallet,'withMetadata':'false','pageSize':100,'orderBy':'transferTime'})
-    document=s.api_json(url)
-    items=document.get('ownedNfts') if isinstance(document,dict) else None
-    if not isinstance(items,list): raise NamiError('NFT inventory response unavailable')
-    checked=0; recognized=[]
-    for item in items:
-        if checked>=max_checked: break
-        if not isinstance(item,dict) or str(item.get('tokenType','')).upper()!='ERC721': continue
-        manager=(item.get('contract') or {}).get('address') if isinstance(item.get('contract'),dict) else None
-        token_id=item.get('tokenId')
-        try:
-            ref=validated_position_ref({'manager':manager,'tokenId':token_id})
-        except NamiError:
+    from nami_auto import _incoming_transfers, _owned_inventory, _current_owner
+    refs = _incoming_transfers(rpc, wallet.lower(), sys.modules[__name__])
+    ids = set(refs) | _owned_inventory(key, wallet.lower(), sys.modules[__name__])
+    recognized = []
+    for token_id in sorted(ids, key=int):
+        current, burned = _current_owner(rpc, sys.modules[__name__], token_id)
+        if burned or current != wallet.lower():
             continue
-        checked+=1
-        try:
-            record=read_nft(rpc,wallet,ref['manager'],ref['tokenId'])
-        except (NamiError,s.SnapshotError,ValueError,IndexError):
-            continue
+        record = read_nft(rpc, wallet, NAMI_MANAGER, token_id)
+        if not record['dexAttributionVerified']:
+            raise NamiError('Nami position provenance verification failed')
         recognized.append(record)
-    return recognized, bool(document.get('pageKey')) or checked>=max_checked
+    return recognized, False
 
 
 def main():
