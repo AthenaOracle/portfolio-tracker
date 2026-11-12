@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-11T23:16:49Z",
+  "snapshotAt": "2026-11-12T02:20:44Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-11T23:16:50+00:00",
+  "generatedAt": "2026-11-12T02:20:45+00:00",
   "mode": "partially-verified",
   "verifiedThroughAt": "2026-11-11T22:12:13Z",
   "hasUnverifiedLatest": true,
@@ -58,6 +58,15 @@
         "sp500": 2.34626,
         "minutesAfterClose": 95.8,
         "marketCloseDate": "2026-11-09"
+      },
+      {
+        "date": "2026-11-11",
+        "at": "2026-11-11T22:12:13Z",
+        "portfolio": -1.514233,
+        "cash": 0.05651,
+        "sp500": 3.28758,
+        "minutesAfterClose": 72.2,
+        "marketCloseDate": "2026-11-11"
       }
     ],
     "schedule": "16:30 America/New_York",
@@ -83,8 +92,8 @@
     },
     "sp500": {
       "label": "S&P 500 price index",
-      "source": "FRED SP500",
-      "observationDate": "2026-11-10",
+      "source": "Yahoo Finance ^GSPC (daily close)",
+      "observationDate": "2026-11-11",
       "dividendsIncluded": false
     }
   },
@@ -143,7 +152,14 @@
       "at": "2026-11-11T22:12:13Z",
       "portfolio": -3.100453,
       "cash": 0.07901,
-      "sp500": -2.18102
+      "sp500": -0.90055
+    },
+    {
+      "date": "2026-11-12",
+      "at": "2026-11-12T02:20:44Z",
+      "portfolio": null,
+      "cash": 0.0904,
+      "sp500": -0.90055
     }
   ]
 }
