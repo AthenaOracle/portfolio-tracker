@@ -10,6 +10,8 @@ on:
       - 'scripts/nami_preview.py'
       - 'scripts/nami_integration.py'
       - 'nami-positions.json'
+      - 'data.json'
+      - 'performance.json'
       - 'tests/test_nami_auto.py'
   # Daily at 4:30 PM New York time, 30 minutes after the regular
   # 4 PM Eastern stock-market close. GitHub schedules can start late.

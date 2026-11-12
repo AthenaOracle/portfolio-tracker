@@ -2,9 +2,9 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-12T02:20:44Z",
+    "at": "2026-11-12T21:30:20Z",
     "date": "2026-11-12",
-    "totalUsd": 559.223871,
+    "totalUsd": 554.657912,
     "tvlUsd": null,
     "counts": {
       "tokens": 6,
@@ -80,17 +80,17 @@
         "protocol": "Solidly V3",
         "name": "USDC / USDT",
         "symbol": "LP",
-        "usd": 322.855896,
+        "usd": 322.866717,
         "underlying": [
           {
             "symbol": "USDC",
-            "amount": "185.2239180328717126489265388",
-            "usd": 185.186293
+            "amount": "196.561355715557202451981409",
+            "usd": 196.524796
           },
           {
             "symbol": "USDT",
-            "amount": "137.8008768986801787497062332",
-            "usd": 137.669602
+            "amount": "126.4527176214738595043400048",
+            "usd": 126.341921
           }
         ],
         "pending": false,
@@ -106,8 +106,8 @@
         "symbol": "ETH",
         "name": "ETH (native)",
         "amount": "0.066011715196063386",
-        "price": 2060.04,
-        "usd": 135.986774,
+        "price": 2018.667136,
+        "usd": 133.25568,
         "url": null
       },
       {
@@ -117,17 +117,17 @@
         "protocol": "Solidly V3",
         "name": "cbETH / WETH",
         "symbol": "LP",
-        "usd": 85.129921,
+        "usd": 83.508903,
         "underlying": [
           {
             "symbol": "cbETH",
-            "amount": "0.01784865872872625223657764335",
-            "usd": 41.908772
+            "amount": "0.0186002961667305342608666613",
+            "usd": 42.885523
           },
           {
             "symbol": "WETH",
-            "amount": "0.02101791627947665755839573435",
-            "usd": 43.221149
+            "amount": "0.02015826324579385129383737071",
+            "usd": 40.62338
           }
         ],
         "pending": false,
@@ -143,17 +143,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 7.179418,
+        "usd": 7.010996,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.002623998441987265963514025087",
-            "usd": 5.395979
+            "amount": "0.002050220647314481334552234114",
+            "usd": 4.13165
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00002419742510475561651545241759",
-            "usd": 1.783439
+            "amount": "0.00004028529222805599834164402411",
+            "usd": 2.879346
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -167,8 +167,8 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.001348235868332634",
-        "price": 2056.395505,
-        "usd": 2.772506,
+        "price": 2015.222229,
+        "usd": 2.716995,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
       },
@@ -179,8 +179,8 @@
         "symbol": "USDT",
         "name": "Tether USD",
         "amount": "2.508598",
-        "price": 0.999047,
-        "usd": 2.506208,
+        "price": 0.999124,
+        "usd": 2.5064,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
       },
@@ -191,8 +191,8 @@
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": "2.501264",
-        "price": 0.999797,
-        "usd": 2.500756,
+        "price": 0.999814,
+        "usd": 2.500799,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -215,13 +215,13 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.000022882280869253",
-        "price": 2348.006815,
-        "usd": 0.053728,
+        "price": 2305.636542,
+        "usd": 0.052758,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       }
     ],
-    "blockNumber": 56298344
+    "blockNumber": 56643224
   },
   "history": [
     {
@@ -251,27 +251,27 @@
     },
     {
       "date": "2026-11-08",
-      "totalUsd": 429.782105,
+      "totalUsd": 429.894748,
       "tvlUsd": null
     },
     {
       "date": "2026-11-09",
-      "totalUsd": 429.694041,
+      "totalUsd": 429.786919,
       "tvlUsd": null
     },
     {
       "date": "2026-11-10",
-      "totalUsd": 427.717047,
+      "totalUsd": 426.391768,
       "tvlUsd": null
     },
     {
       "date": "2026-11-11",
-      "totalUsd": 557.343306,
+      "totalUsd": 558.048053,
       "tvlUsd": null
     },
     {
       "date": "2026-11-12",
-      "totalUsd": 559.223871,
+      "totalUsd": 554.657912,
       "tvlUsd": null
     }
   ],
@@ -290,10 +290,10 @@
   },
   "capitalAudit": {
     "schema": 1,
-    "status": "review-needed",
+    "status": "active",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 56298344,
+    "scannedThroughBlock": 56643224,
     "flows": [
       {
         "date": "2026-11-05",
@@ -308,21 +308,18 @@
         "usd": 3.820683,
         "kind": "deposit",
         "ref": "ab4a2ecbb7e069215a35"
-      }
-    ],
-    "pending": [
+      },
       {
-        "ref": "21569cb8047135433c7d",
+        "date": "2026-11-11",
         "at": "2026-11-11T22:18:52Z",
-        "direction": "in",
-        "asset": "ETH",
-        "quantity": "0.0642228376",
-        "usd": null,
-        "reason": "Direct incoming transfer from an unverified funding address; may be capital or earnings"
+        "usd": 132.98,
+        "kind": "deposit",
+        "ref": "21569cb8047135433c7d"
       }
     ],
-    "message": "0 direct external transfer(s) identified, 1 transaction(s) need review.",
-    "lastScanAt": "2026-11-12T02:20:44Z",
+    "pending": [],
+    "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
+    "lastScanAt": "2026-11-12T21:30:20Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -388,131 +385,95 @@
       "complete": true
     },
     {
-      "at": "2026-11-08T20:06:01Z",
-      "totalUsd": 434.528668,
-      "blockNumber": 54889931,
+      "at": "2026-11-08T19:59:17Z",
+      "totalUsd": 434.655711,
+      "blockNumber": 54887912,
       "complete": true
     },
     {
-      "at": "2026-11-08T20:10:59Z",
-      "totalUsd": 434.397622,
-      "blockNumber": 54891420,
+      "at": "2026-11-08T21:53:49Z",
+      "totalUsd": 433.684472,
+      "blockNumber": 54922268,
       "complete": true
     },
     {
-      "at": "2026-11-08T21:41:46Z",
-      "totalUsd": 434.267046,
-      "blockNumber": 54918655,
+      "at": "2026-11-08T22:04:37Z",
+      "totalUsd": 429.99659,
+      "blockNumber": 54925512,
       "complete": true
     },
     {
-      "at": "2026-11-08T22:21:42Z",
-      "totalUsd": 429.782105,
-      "blockNumber": 54930633,
+      "at": "2026-11-08T22:17:13Z",
+      "totalUsd": 429.894748,
+      "blockNumber": 54929291,
       "complete": true
     },
     {
-      "at": "2026-11-09T01:03:51Z",
-      "totalUsd": 430.50806,
-      "blockNumber": 54979279,
+      "at": "2026-11-09T08:02:07Z",
+      "totalUsd": 427.883657,
+      "blockNumber": 55104759,
       "complete": true
     },
     {
-      "at": "2026-11-09T08:00:21Z",
-      "totalUsd": 427.876393,
-      "blockNumber": 55104229,
+      "at": "2026-11-09T19:49:11Z",
+      "totalUsd": 430.048045,
+      "blockNumber": 55316883,
       "complete": true
     },
     {
-      "at": "2026-11-09T18:51:20Z",
-      "totalUsd": 429.534217,
-      "blockNumber": 55299524,
+      "at": "2026-11-09T21:30:13Z",
+      "totalUsd": 429.786592,
+      "blockNumber": 55347190,
       "complete": true
     },
     {
-      "at": "2026-11-09T19:47:44Z",
-      "totalUsd": 430.035621,
-      "blockNumber": 55316445,
+      "at": "2026-11-09T21:31:18Z",
+      "totalUsd": 429.786919,
+      "blockNumber": 55347514,
       "complete": true
     },
     {
-      "at": "2026-11-09T22:35:46Z",
-      "totalUsd": 429.694041,
-      "blockNumber": 55366853,
+      "at": "2026-11-10T21:30:16Z",
+      "totalUsd": 426.391768,
+      "blockNumber": 55779206,
       "complete": true
     },
     {
-      "at": "2026-11-10T03:40:16Z",
-      "totalUsd": 428.996738,
-      "blockNumber": 55458203,
+      "at": "2026-11-11T19:16:26Z",
+      "totalUsd": 426.984656,
+      "blockNumber": 56171055,
       "complete": true
     },
     {
-      "at": "2026-11-10T12:40:55Z",
-      "totalUsd": 427.717047,
-      "blockNumber": 55620399,
+      "at": "2026-11-11T21:30:21Z",
+      "totalUsd": 427.284272,
+      "blockNumber": 56211230,
       "complete": true
     },
     {
-      "at": "2026-11-11T01:20:05Z",
-      "totalUsd": 425.759825,
-      "blockNumber": 55848151,
+      "at": "2026-11-11T22:42:40Z",
+      "totalUsd": 559.850404,
+      "blockNumber": 56232925,
       "complete": true
     },
     {
-      "at": "2026-11-11T19:11:31Z",
-      "totalUsd": 427.01229,
-      "blockNumber": 56169577,
+      "at": "2026-11-11T23:31:38Z",
+      "totalUsd": 558.048053,
+      "blockNumber": 56247614,
       "complete": true
     },
     {
-      "at": "2026-11-11T22:12:13Z",
-      "totalUsd": 428.00973,
-      "blockNumber": 56223788,
-      "complete": true
-    },
-    {
-      "at": "2026-11-11T22:30:44Z",
-      "totalUsd": 560.851864,
-      "blockNumber": 56229342,
-      "complete": true
-    },
-    {
-      "at": "2026-11-11T23:16:49Z",
-      "totalUsd": 557.343306,
-      "blockNumber": 56243168,
-      "complete": true
-    },
-    {
-      "at": "2026-11-12T02:20:44Z",
-      "totalUsd": 559.223871,
-      "blockNumber": 56298344,
+      "at": "2026-11-12T21:30:20Z",
+      "totalUsd": 554.657912,
+      "blockNumber": 56643224,
       "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 56298329,
+    "scannedToBlock": 56643135,
     "partial": true,
     "ranges": {
-      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
-        [
-          7,
-          13
-        ],
-        [
-          9,
-          10
-        ],
-        [
-          10,
-          16
-        ],
-        [
-          12,
-          18
-        ]
-      ],
       "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
         [
           1292,
@@ -565,6 +526,24 @@
         [
           1342,
           1343
+        ]
+      ],
+      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          18
         ]
       ]
     }
