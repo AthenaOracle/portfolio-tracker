@@ -2,9 +2,9 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-13T01:59:23Z",
-    "date": "2026-11-13",
-    "totalUsd": 553.833016,
+    "at": "2026-11-14T01:31:08Z",
+    "date": "2026-11-14",
+    "totalUsd": 544.799005,
     "tvlUsd": null,
     "counts": {
       "tokens": 6,
@@ -80,17 +80,17 @@
         "protocol": "Solidly V3",
         "name": "USDC / USDT",
         "symbol": "LP",
-        "usd": 322.864151,
+        "usd": 322.879557,
         "underlying": [
           {
             "symbol": "USDC",
-            "amount": "158.5176745099189296271559228",
-            "usd": 158.481831
+            "amount": "133.0141119618154893781785109",
+            "usd": 132.98407
           },
           {
             "symbol": "USDT",
-            "amount": "164.5333207627664142381389707",
-            "usd": 164.38232
+            "amount": "190.0631420006813906044001035",
+            "usd": 189.895487
           }
         ],
         "pending": false,
@@ -106,8 +106,8 @@
         "symbol": "ETH",
         "name": "ETH (native)",
         "amount": "0.066011715196063386",
-        "price": 2010.57,
-        "usd": 132.721174,
+        "price": 1929.361708,
+        "usd": 127.360476,
         "url": null
       },
       {
@@ -117,17 +117,17 @@
         "protocol": "Solidly V3",
         "name": "cbETH / WETH",
         "symbol": "LP",
-        "usd": 83.272551,
+        "usd": 79.952448,
         "underlying": [
           {
             "symbol": "cbETH",
-            "amount": "0.01847261709633788588575893972",
-            "usd": 42.488554
+            "amount": "0.01791520366915583929381261494",
+            "usd": 39.529312
           },
           {
             "symbol": "WETH",
-            "amount": "0.02030428315875981414927150581",
-            "usd": 40.783996
+            "amount": "0.02094180404757774702813440267",
+            "usd": 40.423136
           }
         ],
         "pending": false,
@@ -143,17 +143,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 6.96873,
+        "usd": 6.707841,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.001781505132975294270024922254",
-            "usd": 3.578403
+            "amount": "0.001949890306473610966259944862",
+            "usd": 3.763796
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00004788493331142185667523049561",
-            "usd": 3.390328
+            "amount": "0.00004311786726799210596081861151",
+            "usd": 2.944045
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -167,8 +167,8 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.001348235868332634",
-        "price": 2008.640041,
-        "usd": 2.708121,
+        "price": 1930.260433,
+        "usd": 2.602446,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
       },
@@ -179,8 +179,8 @@
         "symbol": "USDT",
         "name": "Tether USD",
         "amount": "2.508598",
-        "price": 0.999082,
-        "usd": 2.506296,
+        "price": 0.999118,
+        "usd": 2.506385,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
       },
@@ -192,7 +192,7 @@
         "name": "USD Coin",
         "amount": "2.501264",
         "price": 0.999774,
-        "usd": 2.500698,
+        "usd": 2.500699,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -215,13 +215,13 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.000022882280869253",
-        "price": 2300.083104,
-        "usd": 0.052631,
+        "price": 2206.46735,
+        "usd": 0.050489,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       }
     ],
-    "blockNumber": 56723940
+    "blockNumber": 57147466
   },
   "history": [
     {
@@ -278,6 +278,11 @@
       "date": "2026-11-13",
       "totalUsd": 553.833016,
       "tvlUsd": null
+    },
+    {
+      "date": "2026-11-14",
+      "totalUsd": 544.799005,
+      "tvlUsd": null
     }
   ],
   "namiDiscovery": {
@@ -298,7 +303,7 @@
     "status": "active",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 56723940,
+    "scannedThroughBlock": 57147466,
     "flows": [
       {
         "date": "2026-11-05",
@@ -324,7 +329,7 @@
     ],
     "pending": [],
     "message": "0 direct external transfer(s) identified, 0 transaction(s) need review.",
-    "lastScanAt": "2026-11-13T01:59:23Z",
+    "lastScanAt": "2026-11-14T01:31:08Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -484,31 +489,19 @@
       "totalUsd": 553.833016,
       "blockNumber": 56723940,
       "complete": true
+    },
+    {
+      "at": "2026-11-14T01:31:08Z",
+      "totalUsd": 544.799005,
+      "blockNumber": 57147466,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 56723905,
+    "scannedToBlock": 57147443,
     "partial": true,
     "ranges": {
-      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
-        [
-          7,
-          13
-        ],
-        [
-          9,
-          10
-        ],
-        [
-          10,
-          16
-        ],
-        [
-          12,
-          18
-        ]
-      ],
       "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
         [
           1292,
@@ -561,6 +554,24 @@
         [
           1342,
           1343
+        ]
+      ],
+      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          18
         ]
       ]
     }

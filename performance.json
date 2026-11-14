@@ -1,39 +1,39 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-13T01:59:23Z",
+  "snapshotAt": "2026-11-14T01:31:08Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-13T01:59:25+00:00",
+  "generatedAt": "2026-11-14T01:31:10+00:00",
   "mode": "audited-automatic",
-  "verifiedThroughAt": "2026-11-13T01:59:23Z",
+  "verifiedThroughAt": "2026-11-14T01:31:08Z",
   "hasUnverifiedLatest": false,
   "periodSummary": {
     "1": {
-      "usd": -0.82,
-      "pct": -0.14872,
-      "from": "2026-11-12T21:30:20+00:00",
-      "to": "2026-11-13T01:59:23+00:00",
+      "usd": -9.03,
+      "pct": -1.63118,
+      "from": "2026-11-13T01:59:23+00:00",
+      "to": "2026-11-14T01:31:08+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 4.48
+      "hours": 23.53
     },
     "7": {
-      "usd": -14.68,
-      "pct": -3.03718,
-      "from": "2026-11-05T17:56:01+00:00",
-      "to": "2026-11-13T01:59:23+00:00",
+      "usd": -23.23,
+      "pct": -4.5099,
+      "from": "2026-11-07T00:18:07+00:00",
+      "to": "2026-11-14T01:31:08+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 176.06
+      "hours": 169.22
     },
     "30": null,
     "all": {
-      "usd": -20.45,
-      "pct": -4.3885,
+      "usd": -29.48,
+      "pct": -5.9481,
       "from": "2026-11-04T20:44:26+00:00",
-      "to": "2026-11-13T01:59:23+00:00",
+      "to": "2026-11-14T01:31:08+00:00",
       "estimate": true,
       "method": "modified-dietz",
-      "hours": 197.25
+      "hours": 220.78
     }
   },
   "warning": null,
@@ -105,13 +105,13 @@
     "cash": {
       "label": "3M US Treasury (modeled)",
       "source": "FRED DGS3MO",
-      "annualYieldPct": 4.3,
-      "observationDate": "2026-11-10"
+      "annualYieldPct": 4.32,
+      "observationDate": "2026-11-12"
     },
     "sp500": {
       "label": "S&P 500 price index",
-      "source": "Yahoo Finance ^GSPC (daily close)",
-      "observationDate": "2026-11-12",
+      "source": "FRED SP500",
+      "observationDate": "2026-11-13",
       "dividendsIncluded": false
     }
   },
@@ -183,8 +183,15 @@
       "date": "2026-11-13",
       "at": "2026-11-13T01:59:23Z",
       "portfolio": -4.388504,
-      "cash": 0.10226,
-      "sp500": -1.25146
+      "cash": 0.10231,
+      "sp500": -1.65114
+    },
+    {
+      "date": "2026-11-14",
+      "at": "2026-11-14T01:31:08Z",
+      "portfolio": -5.948099,
+      "cash": 0.11391,
+      "sp500": -1.65114
     }
   ]
 }
