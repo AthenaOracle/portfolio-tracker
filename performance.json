@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-15T10:41:49Z",
+  "snapshotAt": "2026-11-16T01:12:56Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-15T10:41:53+00:00",
-  "mode": "audited-automatic",
+  "generatedAt": "2026-11-16T01:13:06+00:00",
+  "mode": "partially-verified",
   "verifiedThroughAt": "2026-11-15T10:41:49Z",
-  "hasUnverifiedLatest": false,
+  "hasUnverifiedLatest": true,
   "periodSummary": {
     "1": {
       "usd": 12.18,
@@ -28,7 +28,7 @@
       "hours": 253.96
     }
   },
-  "warning": null,
+  "warning": "New capital transfers need review; prior verified returns remain visible.",
   "closeComparison": {
     "mode": "close-aligned",
     "anchorAt": "2026-11-06T21:16:20Z",
@@ -85,8 +85,8 @@
   "baselineDate": "2026-11-04",
   "portfolioStartDate": "2026-11-04",
   "audit": {
-    "status": "active",
-    "pendingCount": 0,
+    "status": "review-needed",
+    "pendingCount": 3,
     "verifiedFrom": "2026-11-04T20:44:26Z",
     "recognisedTransfers": 3,
     "netExternalCapitalUsd": 160.63,
@@ -190,6 +190,13 @@
       "at": "2026-11-15T10:41:49Z",
       "portfolio": -7.934521,
       "cash": 0.12551,
+      "sp500": -1.65114
+    },
+    {
+      "date": "2026-11-16",
+      "at": "2026-11-16T01:12:56Z",
+      "portfolio": null,
+      "cash": 0.13712,
       "sp500": -1.65114
     }
   ]
