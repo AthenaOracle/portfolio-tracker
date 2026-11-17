@@ -2,15 +2,15 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-16T01:12:56Z",
-    "date": "2026-11-16",
-    "totalUsd": 659.66596,
+    "at": "2026-11-17T04:02:34Z",
+    "date": "2026-11-17",
+    "totalUsd": 660.086456,
     "tvlUsd": null,
     "counts": {
-      "tokens": 7,
+      "tokens": 6,
       "lps": 3,
       "manual": 0,
-      "unpriced": 45
+      "unpriced": 47
     },
     "pricedIds": [
       "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
@@ -18,13 +18,12 @@
       "base:0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd",
       "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
       "base:0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
-      "base:0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
       "base:native"
     ],
     "warnings": [
       "Solidly LP USDC / USDT: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
       "Solidly LP cbETH / WETH: positions detected from a bounded wallet transaction scan; earlier or externally created positions may be missed.",
-      "45 ERC-20 token balance(s) lack prices or metadata and are excluded. Check these before trusting the total.",
+      "47 ERC-20 token balance(s) lack prices or metadata and are excluded. Check these before trusting the total.",
       "Uniswap V3 values include liquidity and recorded owed tokens, but exclude fees accrued since the last position update. Staked/transferred NFTs are not found.",
       "Daily value changes include deposits, withdrawals and transfers; they are not investment returns."
     ],
@@ -38,6 +37,7 @@
       "base: unpriced MINIMAL (0x29b88b38…)",
       "base: unpriced ZERO (0x2a2851f1…)",
       "base: unpriced NOMA (0x2fd8e050…)",
+      "base: unpriced WASTED (0x39cf821c…)",
       "base: unpriced AXIS (0x3de908ee…)",
       "base: unpriced DACITY (0x3f53a22d…)",
       "base: unpriced GTA6 (0x46e3e18f…)",
@@ -69,6 +69,7 @@
       "base: unpriced MEPR (0xd3115aa6…)",
       "base: unpriced DACITY (0xd5fac3ea…)",
       "base: unpriced AXIS (0xd6ec40c1…)",
+      "base: unpriced Macca (0xd70c7322…)",
       "base: unpriced www`discord`gg/DCPrime (0xec5622b5…)",
       "base: unpriced VAR (0xed517277…)",
       "base: unpriced SQK (0xf118d956…)",
@@ -77,56 +78,16 @@
     ],
     "rows": [
       {
-        "id": "base:solidly:0x9ab7730b09ebd9ff2df70f06339bd289a1680a46",
+        "id": "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
         "chain": "base",
-        "type": "lp",
-        "protocol": "Solidly V3",
-        "name": "USDC / USDT",
-        "symbol": "LP",
-        "usd": 327.157391,
-        "underlying": [
-          {
-            "symbol": "USDC",
-            "amount": "291.5738838847025770971817091",
-            "usd": 291.519896
-          },
-          {
-            "symbol": "USDT",
-            "amount": "35.64803072210963029803689518",
-            "usd": 35.637496
-          }
-        ],
-        "pending": false,
-        "rangesChecked": 6,
-        "activeRanges": 2,
-        "source": "on-chain best effort",
-        "url": "https://basescan.org/address/0x9ab7730b09ebd9ff2df70f06339bd289a1680a46"
-      },
-      {
-        "id": "base:solidly:0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b",
-        "chain": "base",
-        "type": "lp",
-        "protocol": "Solidly V3",
-        "name": "cbETH / WETH",
-        "symbol": "LP",
-        "usd": 187.312118,
-        "underlying": [
-          {
-            "symbol": "cbETH",
-            "amount": "0.009829298360001579848535733924",
-            "usd": 20.347557
-          },
-          {
-            "symbol": "WETH",
-            "amount": "0.09232683411382854266537101725",
-            "usd": 166.964561
-          }
-        ],
-        "pending": false,
-        "rangesChecked": 14,
-        "activeRanges": 1,
-        "source": "on-chain best effort",
-        "url": "https://basescan.org/address/0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b"
+        "type": "token",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "amount": "518.488128",
+        "price": 0.999804,
+        "usd": 518.386629,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
       {
         "id": "base:0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
@@ -135,8 +96,8 @@
         "symbol": "cbBTC",
         "name": "Coinbase Wrapped BTC",
         "amount": "0.00198334",
-        "price": 64771.917581,
-        "usd": 128.464735,
+        "price": 64962.566894,
+        "usd": 128.842857,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
       },
@@ -147,17 +108,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 6.312561,
+        "usd": 6.369742,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.00246942444506759415260307775",
-            "usd": 4.465726
+            "amount": "0.002096234909991876614012882787",
+            "usd": 3.836972
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00002851289951992863479009801266",
-            "usd": 1.846835
+            "amount": "0.0000389881434794632005027125726",
+            "usd": 2.53277
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -170,34 +131,10 @@
         "type": "token",
         "symbol": "ETH",
         "name": "ETH (native)",
-        "amount": "0.002993461943710216",
-        "price": 1811.224869,
-        "usd": 5.421833,
+        "amount": "0.002974882932444135",
+        "price": 1832.341723,
+        "usd": 5.451002,
         "url": null
-      },
-      {
-        "id": "base:0x4200000000000000000000000000000000000006",
-        "chain": "base",
-        "type": "token",
-        "symbol": "WETH",
-        "name": "Wrapped Ether",
-        "amount": "0.002181139418104093",
-        "price": 1808.407737,
-        "usd": 3.944389,
-        "priceSource": "chain-market",
-        "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
-      },
-      {
-        "id": "base:0xfde4c96c8593536e31f229ea8f37b2ada2699bb2",
-        "chain": "base",
-        "type": "token",
-        "symbol": "USDT",
-        "name": "Tether USD",
-        "amount": "0.709119",
-        "price": 0.999704,
-        "usd": 0.708909,
-        "priceSource": "chain-market",
-        "url": "https://basescan.org/token/0xfde4c96c8593536e31f229ea8f37b2ada2699bb2"
       },
       {
         "id": "base:0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd",
@@ -205,9 +142,9 @@
         "type": "token",
         "symbol": "SOLID",
         "name": "Solidly",
-        "amount": "76.421231672439358466",
+        "amount": "268.595593429304144086",
         "price": 0.003123,
-        "usd": 0.238664,
+        "usd": 0.838824,
         "priceSource": "fixed-indicative",
         "url": "https://basescan.org/token/0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd"
       },
@@ -217,26 +154,78 @@
         "type": "token",
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
-        "amount": "0.000047554168204247",
-        "price": 2070.092533,
-        "usd": 0.098442,
+        "amount": "0.000057530653481171",
+        "price": 2095.000826,
+        "usd": 0.120527,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       },
       {
-        "id": "base:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "id": "base:0x4200000000000000000000000000000000000006",
         "chain": "base",
         "type": "token",
-        "symbol": "USDC",
-        "name": "USD Coin",
-        "amount": "0.006919",
-        "price": 0.999815,
-        "usd": 0.006918,
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "amount": "0.000041998664090892",
+        "price": 1830.411415,
+        "usd": 0.076875,
         "priceSource": "chain-market",
-        "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+        "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
+      },
+      {
+        "id": "base:solidly:0x9ab7730b09ebd9ff2df70f06339bd289a1680a46",
+        "chain": "base",
+        "type": "lp",
+        "protocol": "Solidly V3",
+        "name": "USDC / USDT",
+        "symbol": "LP",
+        "usd": 0.0,
+        "underlying": [
+          {
+            "symbol": "USDC",
+            "amount": "0",
+            "usd": 0.0
+          },
+          {
+            "symbol": "USDT",
+            "amount": "0",
+            "usd": 0.0
+          }
+        ],
+        "pending": false,
+        "rangesChecked": 7,
+        "activeRanges": 0,
+        "source": "on-chain best effort",
+        "url": "https://basescan.org/address/0x9ab7730b09ebd9ff2df70f06339bd289a1680a46"
+      },
+      {
+        "id": "base:solidly:0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b",
+        "chain": "base",
+        "type": "lp",
+        "protocol": "Solidly V3",
+        "name": "cbETH / WETH",
+        "symbol": "LP",
+        "usd": 0.0,
+        "underlying": [
+          {
+            "symbol": "cbETH",
+            "amount": "0",
+            "usd": 0.0
+          },
+          {
+            "symbol": "WETH",
+            "amount": "0",
+            "usd": 0.0
+          }
+        ],
+        "pending": false,
+        "rangesChecked": 14,
+        "activeRanges": 0,
+        "source": "on-chain best effort",
+        "url": "https://basescan.org/address/0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b"
       }
     ],
-    "blockNumber": 58006004
+    "blockNumber": 58488893
   },
   "history": [
     {
@@ -308,6 +297,11 @@
       "date": "2026-11-16",
       "totalUsd": 659.66596,
       "tvlUsd": null
+    },
+    {
+      "date": "2026-11-17",
+      "totalUsd": 660.086456,
+      "tvlUsd": null
     }
   ],
   "namiDiscovery": {
@@ -328,7 +322,7 @@
     "status": "review-needed",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 58006004,
+    "scannedThroughBlock": 58488893,
     "flows": [
       {
         "date": "2026-11-05",
@@ -382,7 +376,7 @@
       }
     ],
     "message": "0 direct external transfer(s) identified, 3 transaction(s) need review.",
-    "lastScanAt": "2026-11-16T01:12:56Z",
+    "lastScanAt": "2026-11-17T04:02:34Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -566,39 +560,19 @@
       "totalUsd": 659.66596,
       "blockNumber": 58006004,
       "complete": true
+    },
+    {
+      "at": "2026-11-17T04:02:34Z",
+      "totalUsd": 660.086456,
+      "blockNumber": 58488893,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 58005961,
+    "scannedToBlock": 58488850,
     "partial": true,
     "ranges": {
-      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
-        [
-          4,
-          10
-        ],
-        [
-          6,
-          10
-        ],
-        [
-          7,
-          13
-        ],
-        [
-          9,
-          10
-        ],
-        [
-          10,
-          16
-        ],
-        [
-          12,
-          18
-        ]
-      ],
       "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
         [
           1292,
@@ -656,6 +630,36 @@
           1344,
           1345
         ]
+      ],
+      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          18
+        ]
       ]
     }
   },
@@ -709,6 +713,11 @@
       "decimals": 9,
       "symbol": "NOMA",
       "name": "Noma"
+    },
+    "base:0x39cf821c01aba99f36f5da79c44f7e04983b0b47": {
+      "decimals": 9,
+      "symbol": "WASTED",
+      "name": "Wasted"
     },
     "base:0x3de908ee35d26c455df3560aee26a967e8d6d716": {
       "decimals": 9,
@@ -884,6 +893,11 @@
       "decimals": 9,
       "symbol": "AXIS",
       "name": "Axis Token"
+    },
+    "base:0xd70c7322fbf0376d07e86eb9304fb534326434a2": {
+      "decimals": 9,
+      "symbol": "Macca",
+      "name": "Macca the Gator"
     },
     "base:0xec5622b5cabced3c241c43729efb996ed6b88b55": {
       "decimals": 18,
