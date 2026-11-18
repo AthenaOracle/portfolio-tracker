@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-17T04:02:34Z",
+  "snapshotAt": "2026-11-18T02:59:08Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-17T04:02:41+00:00",
+  "generatedAt": "2026-11-18T02:59:08+00:00",
   "mode": "partially-verified",
   "verifiedThroughAt": "2026-11-15T10:41:49Z",
   "hasUnverifiedLatest": true,
@@ -97,13 +97,13 @@
     "cash": {
       "label": "3M US Treasury (modeled)",
       "source": "FRED DGS3MO",
-      "annualYieldPct": 4.32,
-      "observationDate": "2026-11-13"
+      "annualYieldPct": 4.34,
+      "observationDate": "2026-11-16"
     },
     "sp500": {
       "label": "S&P 500 price index",
-      "source": "FRED SP500",
-      "observationDate": "2026-11-16",
+      "source": "Yahoo Finance ^GSPC (daily close)",
+      "observationDate": "2026-11-17",
       "dividendsIncluded": false
     }
   },
@@ -203,8 +203,15 @@
       "date": "2026-11-17",
       "at": "2026-11-17T04:02:34Z",
       "portfolio": null,
-      "cash": 0.14872,
-      "sp500": -3.53809
+      "cash": 0.14877,
+      "sp500": -4.52734
+    },
+    {
+      "date": "2026-11-18",
+      "at": "2026-11-18T02:59:08Z",
+      "portfolio": null,
+      "cash": 0.16043,
+      "sp500": -4.52734
     }
   ]
 }
