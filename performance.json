@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "snapshotAt": "2026-11-22T01:27:26Z",
+  "snapshotAt": "2026-11-23T01:52:57Z",
   "firstDate": "2026-11-03",
-  "generatedAt": "2026-11-22T01:27:28+00:00",
+  "generatedAt": "2026-11-23T01:52:59+00:00",
   "mode": "partially-verified",
   "verifiedThroughAt": "2026-11-15T10:41:49Z",
   "hasUnverifiedLatest": true,
@@ -239,6 +239,13 @@
       "at": "2026-11-22T01:27:26Z",
       "portfolio": null,
       "cash": 0.20705,
+      "sp500": -10.12184
+    },
+    {
+      "date": "2026-11-23",
+      "at": "2026-11-23T01:52:57Z",
+      "portfolio": null,
+      "cash": 0.21871,
       "sp500": -10.12184
     }
   ]
