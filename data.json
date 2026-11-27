@@ -2,17 +2,18 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-26T03:40:37Z",
-    "date": "2026-11-26",
-    "totalUsd": 650.651461,
+    "at": "2026-11-27T03:41:25Z",
+    "date": "2026-11-27",
+    "totalUsd": 652.550045,
     "tvlUsd": null,
     "counts": {
-      "tokens": 6,
+      "tokens": 7,
       "lps": 3,
       "manual": 0,
       "unpriced": 47
     },
     "pricedIds": [
+      "base:0x07d15798a67253d76cea61f0ea6f57aedc59dffb",
       "base:0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
       "base:0x4200000000000000000000000000000000000006",
       "base:0x777cf5ba9c291a1a8f57ff14836f6f9dc5c0f9dd",
@@ -84,8 +85,8 @@
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": "518.488128",
-        "price": 0.999953,
-        "usd": 518.463943,
+        "price": 0.999848,
+        "usd": 518.409567,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -96,8 +97,8 @@
         "symbol": "cbBTC",
         "name": "Coinbase Wrapped BTC",
         "amount": "0.00198334",
-        "price": 60615.47577,
-        "usd": 120.221098,
+        "price": 61487.298199,
+        "usd": 121.950218,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
       },
@@ -108,17 +109,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 5.910096,
+        "usd": 6.017819,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.002519353635835095308171122726",
-            "usd": 4.266358
+            "amount": "0.002236018885757279479914397308",
+            "usd": 3.862375
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00002711746288853153858799283931",
-            "usd": 1.643738
+            "amount": "0.00003505510523316296358731401001",
+            "usd": 2.155444
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -132,8 +133,8 @@
         "symbol": "ETH",
         "name": "ETH (native)",
         "amount": "0.002974882932444135",
-        "price": 1692.498403,
-        "usd": 5.034985,
+        "price": 1728.332914,
+        "usd": 5.141588,
         "url": null
       },
       {
@@ -155,8 +156,8 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.000057530653481171",
-        "price": 1936.235406,
-        "usd": 0.111393,
+        "price": 1982.379622,
+        "usd": 0.114048,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       },
@@ -167,10 +168,22 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.000041998664090892",
-        "price": 1693.433673,
-        "usd": 0.071122,
+        "price": 1727.344591,
+        "usd": 0.072546,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
+      },
+      {
+        "id": "base:0x07d15798a67253d76cea61f0ea6f57aedc59dffb",
+        "chain": "base",
+        "type": "token",
+        "symbol": "BASED",
+        "name": "Based Coin",
+        "amount": "1268.498942917547434619",
+        "price": 4e-06,
+        "usd": 0.005435,
+        "priceSource": "chain-market",
+        "url": "https://basescan.org/token/0x07d15798a67253d76cea61f0ea6f57aedc59dffb"
       },
       {
         "id": "base:solidly:0x9ab7730b09ebd9ff2df70f06339bd289a1680a46",
@@ -225,7 +238,7 @@
         "url": "https://basescan.org/address/0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b"
       }
     ],
-    "blockNumber": 62370309
+    "blockNumber": 62802551
   },
   "history": [
     {
@@ -347,6 +360,11 @@
       "date": "2026-11-26",
       "totalUsd": 650.651461,
       "tvlUsd": null
+    },
+    {
+      "date": "2026-11-27",
+      "totalUsd": 652.550045,
+      "tvlUsd": null
     }
   ],
   "namiDiscovery": {
@@ -367,7 +385,7 @@
     "status": "review-needed",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 62370309,
+    "scannedThroughBlock": 62802551,
     "flows": [
       {
         "date": "2026-11-05",
@@ -418,10 +436,19 @@
         "quantity": "0.001999523213574538",
         "usd": null,
         "reason": "Contract or complex transfer; classify as capital or internal only after review"
+      },
+      {
+        "ref": "6abe03348c82cef8e6e3",
+        "at": "2026-11-26T05:19:04Z",
+        "direction": "in",
+        "asset": "BASED",
+        "quantity": "1268.498942917547434619",
+        "usd": null,
+        "reason": "Contract or complex transfer; classify as capital or internal only after review"
       }
     ],
-    "message": "0 direct external transfer(s) identified, 3 transaction(s) need review.",
-    "lastScanAt": "2026-11-26T03:40:37Z",
+    "message": "0 direct external transfer(s) identified, 4 transaction(s) need review.",
+    "lastScanAt": "2026-11-27T03:41:25Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -665,13 +692,49 @@
       "totalUsd": 650.651461,
       "blockNumber": 62370309,
       "complete": true
+    },
+    {
+      "at": "2026-11-27T03:41:25Z",
+      "totalUsd": 652.550045,
+      "blockNumber": 62802551,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 62370297,
+    "scannedToBlock": 62802506,
     "partial": true,
     "ranges": {
+      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          12,
+          18
+        ]
+      ],
       "0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b": [
         [
           1292,
@@ -729,40 +792,15 @@
           1344,
           1345
         ]
-      ],
-      "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
-        [
-          4,
-          10
-        ],
-        [
-          5,
-          6
-        ],
-        [
-          6,
-          10
-        ],
-        [
-          7,
-          13
-        ],
-        [
-          9,
-          10
-        ],
-        [
-          10,
-          16
-        ],
-        [
-          12,
-          18
-        ]
       ]
     }
   },
   "tokenMetadata": {
+    "base:0x07d15798a67253d76cea61f0ea6f57aedc59dffb": {
+      "decimals": 18,
+      "symbol": "BASED",
+      "name": "Based Coin"
+    },
     "base:0x08014382ee327a7e0c09b34a1ba6ad5675434613": {
       "decimals": 9,
       "symbol": "MISFIT",
