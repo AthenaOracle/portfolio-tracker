@@ -2,9 +2,9 @@
   "schema": 2,
   "startedAt": "2026-11-03T00:00:00Z",
   "last": {
-    "at": "2026-11-27T03:41:25Z",
-    "date": "2026-11-27",
-    "totalUsd": 652.550045,
+    "at": "2026-11-28T03:23:43Z",
+    "date": "2026-11-28",
+    "totalUsd": 649.029415,
     "tvlUsd": null,
     "counts": {
       "tokens": 7,
@@ -85,8 +85,8 @@
         "symbol": "USDC",
         "name": "USD Coin",
         "amount": "518.488128",
-        "price": 0.999848,
-        "usd": 518.409567,
+        "price": 0.999919,
+        "usd": 518.446147,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
       },
@@ -97,8 +97,8 @@
         "symbol": "cbBTC",
         "name": "Coinbase Wrapped BTC",
         "amount": "0.00198334",
-        "price": 61487.298199,
-        "usd": 121.950218,
+        "price": 59900.969622,
+        "usd": 118.803989,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
       },
@@ -109,17 +109,17 @@
         "protocol": "Nami",
         "name": "WETH / cbBTC",
         "symbol": "LP",
-        "usd": 6.017819,
+        "usd": 5.812534,
         "underlying": [
           {
             "symbol": "WETH",
-            "amount": "0.002236018885757279479914397308",
-            "usd": 3.862375
+            "amount": "0.002834498226961425583689962687",
+            "usd": 4.713806
           },
           {
             "symbol": "cbBTC",
-            "amount": "0.00003505510523316296358731401001",
-            "usd": 2.155444
+            "amount": "0.00001834240842383141292777713648",
+            "usd": 1.098728
           }
         ],
         "source": "verified Nami Algebra NFT",
@@ -133,8 +133,8 @@
         "symbol": "ETH",
         "name": "ETH (native)",
         "amount": "0.002974882932444135",
-        "price": 1728.332914,
-        "usd": 5.141588,
+        "price": 1661.854851,
+        "usd": 4.943824,
         "url": null
       },
       {
@@ -156,8 +156,8 @@
         "symbol": "cbETH",
         "name": "Coinbase Wrapped Staked ETH",
         "amount": "0.000057530653481171",
-        "price": 1982.379622,
-        "usd": 0.114048,
+        "price": 1903.42502,
+        "usd": 0.109505,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22"
       },
@@ -168,8 +168,8 @@
         "symbol": "WETH",
         "name": "Wrapped Ether",
         "amount": "0.000041998664090892",
-        "price": 1727.344591,
-        "usd": 0.072546,
+        "price": 1663.012447,
+        "usd": 0.069844,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x4200000000000000000000000000000000000006"
       },
@@ -181,7 +181,7 @@
         "name": "Based Coin",
         "amount": "1268.498942917547434619",
         "price": 4e-06,
-        "usd": 0.005435,
+        "usd": 0.004748,
         "priceSource": "chain-market",
         "url": "https://basescan.org/token/0x07d15798a67253d76cea61f0ea6f57aedc59dffb"
       },
@@ -238,7 +238,7 @@
         "url": "https://basescan.org/address/0x74ad64bac8df96af2b63ea50c3d8840b79aa7a3b"
       }
     ],
-    "blockNumber": 62802551
+    "blockNumber": 63229241
   },
   "history": [
     {
@@ -365,6 +365,11 @@
       "date": "2026-11-27",
       "totalUsd": 652.550045,
       "tvlUsd": null
+    },
+    {
+      "date": "2026-11-28",
+      "totalUsd": 649.029415,
+      "tvlUsd": null
     }
   ],
   "namiDiscovery": {
@@ -385,7 +390,7 @@
     "status": "review-needed",
     "baselineAt": "2026-11-04T20:44:26Z",
     "baselineUsd": 413.653693,
-    "scannedThroughBlock": 62802551,
+    "scannedThroughBlock": 63229241,
     "flows": [
       {
         "date": "2026-11-05",
@@ -448,7 +453,7 @@
       }
     ],
     "message": "0 direct external transfer(s) identified, 4 transaction(s) need review.",
-    "lastScanAt": "2026-11-27T03:41:25Z",
+    "lastScanAt": "2026-11-28T03:23:43Z",
     "coverageAdjustments": [
       {
         "at": "2026-11-06T21:16:20Z",
@@ -698,11 +703,17 @@
       "totalUsd": 652.550045,
       "blockNumber": 62802551,
       "complete": true
+    },
+    {
+      "at": "2026-11-28T03:23:43Z",
+      "totalUsd": 649.029415,
+      "blockNumber": 63229241,
+      "complete": true
     }
   ],
   "solidlyDiscovery": {
     "fingerprint": "442a4ed86450789240f89606",
-    "scannedToBlock": 62802506,
+    "scannedToBlock": 63229198,
     "partial": true,
     "ranges": {
       "0x9ab7730b09ebd9ff2df70f06339bd289a1680a46": [
